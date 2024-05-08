@@ -1,20 +1,38 @@
 <script>
+	import Icon from '@iconify/svelte';
 
-	import Icon from "@iconify/svelte";
+	import { fly } from 'svelte/transition';
 
+	let isDivVisible = false;
+
+	function toggleDivVisibility() {
+		isDivVisible = !isDivVisible;
+	}
 </script>
+
 <nav class="bg-cyan-500">
 	<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 		<div class="relative flex h-16 px-2 items-center justify-between">
+			<div class="sm:hidden">
+				<button
+					class="text-white p-2 rounded-md focus:outline-none hover:bg-white hover:text-cyan-500"
+					aria-label="Toggle menu"
+					on:click={toggleDivVisibility}
+				>
+					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M4 6h16M4 12h16m-7 6h7"
+						></path>
+					</svg>
+				</button>
+			</div>
 			<div
 				class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start py-2 p-1"
 			>
 				<div class="flex-shrink-0 items-center hidden md:flex lg:flex">
-					<!-- <img
-						class="h-8 w-auto"
-						src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-						alt="Your Company"
-					/> -->
 					<Icon icon="cryptocurrency:beam" width="36" height="36" style="color: #2314f5" />
 				</div>
 				<div class="hidden sm:ml-6 sm:block">
@@ -168,36 +186,51 @@
 		</div>
 	</div>
 
-	<!-- Mobile menu, show/hide based on menu state. -->
-	<div class="sm:hidden" id="mobile-menu">
-		<div class="space-y-1 px-2 pb-3 pt-2">
-			<!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-			<a
-				href="#"
-				class=" text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center"
-				>Dashboard</a
+	{#if isDivVisible}
+		<div
+			class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50 transition-opacity duration-300"
+		>
+			<div
+				class="bg-cyan-500 w-[40%] h-full transform -translate-x-full transition-transform duration-300 ease-in-out relative"
 			>
-			<a
-				href="#"
-				class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center"
-				>Parts</a
-			>
-			<a
-				href="#"
-				class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center"
-				>Estimation</a
-			>
-			<!-- <a
-				href="#"
-				class="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-				>Setting</a
-			>
-			<a
-				href="#"
-				class="text-white hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium"
-				>Help</a
-			> -->
-		</div>
-	</div>
-</nav>
+				<button
+					class="flex text-white p-2 m-2 rounded hover:text-cyan-500 hover:bg-white absolute top-0 right-0"
+					on:click={toggleDivVisibility}
+				>
+					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							stroke-width="2"
+							d="M6 18L18 6M6 6l12 12"
+						></path>
+					</svg>
+				</button>
 
+				<!-- <div class="space-y-1 px-2 pb-3 pt-2 absolute top-[40px] left-14">
+				<a href="#" class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center">Dashboard</a>
+				<a href="#" class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center">Parts</a>
+				<a href="#" class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center">Estimation</a>
+			</div> -->
+
+				<div class="space-y-1 px-2 pb-3 pt-2 mt-[4rem]">
+					<a
+						href="#"
+						class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center"
+						>Dashboard</a
+					>
+					<a
+						href="#"
+						class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center"
+						>Parts</a
+					>
+					<a
+						href="#"
+						class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center"
+						>Estimation</a
+					>
+				</div>
+			</div>
+		</div>
+	{/if}
+</nav>
