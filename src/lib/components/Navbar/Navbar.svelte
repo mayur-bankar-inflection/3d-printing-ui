@@ -1,3 +1,13 @@
+<script>
+	let isMenuOpen = false;
+	let isButtonClick = false;
+
+	function toggleMenu() {
+		isButtonClick = !isButtonClick;
+		isMenuOpen = !isMenuOpen;
+	}
+</script>
+
 <nav class="bg-blue-400 p-3 shadow-inner shadow-blue-700 shadow-md">
 	<div class="flex items-center justify-between">
 		<a href="/">
@@ -40,13 +50,14 @@
 				</a>
 
 				<a href="/">
-					<div 
-					class="relative before:content-[attr(data-tip)] before:absolute before:px-3 before:py-2 before:left-2 before:bottom-1 before:w-max before:max-w-xs before:translate-x-1 before:translate-y-16 before:bg-slate-700 before:text-white before:rounded-md before:opacity-0 before:transition-all
+					<div
+						class="relative before:content-[attr(data-tip)] before:absolute before:px-3 before:py-2 before:left-2 before:bottom-1 before:w-max before:max-w-xs before:translate-x-1 before:translate-y-16 before:bg-slate-700 before:text-white before:rounded-md before:opacity-0 before:transition-all
 						
 					after:absolute after:left-11 after:-bottom-5 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-b-gray-700 after:border-l-transparent after:border-t-transparent after:border-r-transparent after:opacity-0 after:transition-all
 					hover:before:opacity-100 hover:after:opacity-100
 					"
-					data-tip="Items">
+						data-tip="Items"
+					>
 						<button
 							class="mr-1 ml-1 rounded-sm w-20 hover:bg-white text-white hover:text-blue-400 duration-300 h-inherit px-1 py-1"
 						>
@@ -73,13 +84,13 @@
 
 				<a href="/">
 					<div
-					class="relative before:content-[attr(data-tip)] before:absolute before:px-3 before:py-2 before:left-2 before:bottom-1 before:w-max before:max-w-xs before:-translate-x-4 before:translate-y-16 before:bg-slate-700 before:text-white before:rounded-md before:opacity-0 before:transition-all
+						class="relative before:content-[attr(data-tip)] before:absolute before:px-3 before:py-2 before:left-2 before:bottom-1 before:w-max before:max-w-xs before:-translate-x-4 before:translate-y-16 before:bg-slate-700 before:text-white before:rounded-md before:opacity-0 before:transition-all
 						
 						after:absolute after:left-9 after:-bottom-5 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-b-gray-700 after:border-l-transparent after:border-t-transparent after:border-r-transparent after:opacity-0 after:transition-all
 						hover:before:opacity-100 hover:after:opacity-100
 						"
 						data-tip="Estimate"
-						>
+					>
 						<button
 							class="mr-1 ml-1 rounded-sm hover:bg-white text-white hover:text-blue-400 duration-300 h-inherit px-1 py-1"
 						>
@@ -199,18 +210,50 @@
 			</div>
 		</div>
 
-		<div class="md:hidden cursor-pointer">
-			<svg
-				width="30"
-				height="30"
-				viewBox="0 0 24 24"
-				fill="none"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-				<path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-				<path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-			</svg>
-		</div>
+		<button class="md:hidden cursor-pointer" on:click={toggleMenu}>
+			{#if isButtonClick}
+			<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="20" width="20" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
+				<g>
+					<g>
+						<polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512     512,452.922 315.076,256   "/>
+					</g>
+				</g>
+				</svg>
+			{:else}
+				<svg
+					width="30"
+					height="30"
+					viewBox="0 0 24 24"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+					<path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+					<path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
+				</svg>
+			{/if}
+		</button>
 	</div>
 </nav>
+
+<div class="flex justify-end md:hidden">
+	<div class="bg-white text-black w-2/5 text-center">
+		<ul class:open={isMenuOpen} class="p-5 font-semibold">
+			<li class="">
+				<a href="/">Dashboard</a>
+			</li>
+			<li>
+				<a href="/">Items</a>
+			</li>
+			<li>
+				<a href="/">Estimate</a>
+			</li>
+			<li>
+				<a href="/">Settings</a>
+			</li>
+			<li>
+				<a href="/">Help</a>
+			</li>
+		</ul>
+	</div>
+</div>
