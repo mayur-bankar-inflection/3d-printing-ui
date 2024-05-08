@@ -4,7 +4,7 @@
 			<img src="logo.webp" alt="" class="h-10" />
 		</a>
 
-		<div class="flex justify-between items-center flex-1 md:flex">
+		<div class="flex justify-between items-center flex-1 hidden md:flex">
 			<div class="flex items-center">
 				<a href="/">
 					<div
