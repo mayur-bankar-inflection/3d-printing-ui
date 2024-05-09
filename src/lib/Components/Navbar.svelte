@@ -1,7 +1,17 @@
-<script>
+<script lang="ts">
 	import Icon from '@iconify/svelte';
+	import {
+		backInOut,
+		circInOut,
+		elasticInOut,
+		quintOut,
+		sineIn,
+		sineInOut,
+		sineOut
+	} from 'svelte/easing';
+	// import * as Drawer from './ui/drawer';
 
-	import { fly } from 'svelte/transition';
+	import { fly, slide } from 'svelte/transition';
 
 	let isDivVisible = false;
 
@@ -10,12 +20,12 @@
 	}
 </script>
 
-<nav class="bg-cyan-500">
+<nav class="bg-green-500">
 	<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
-		<div class="relative flex h-16 px-2 items-center justify-between">
+		<div class="relative flex h-16 items-center justify-between px-2">
 			<div class="sm:hidden">
 				<button
-					class="text-white p-2 rounded-md focus:outline-none hover:bg-white hover:text-cyan-500"
+					class="rounded-md p-2 text-white hover:bg-white hover:text-cyan-500 focus:outline-none"
 					aria-label="Toggle menu"
 					on:click={toggleDivVisibility}
 				>
@@ -28,22 +38,23 @@
 						></path>
 					</svg>
 				</button>
+				<!-- <Drawer.Trigger class="bg-red-600">Open</Drawer.Trigger> -->
 			</div>
 			<div
-				class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start py-2 p-1"
+				class="flex flex-1 items-center justify-center p-1 py-2 sm:items-stretch sm:justify-start"
 			>
-				<div class="flex-shrink-0 items-center hidden md:flex lg:flex">
+				<div class="hidden flex-shrink-0 items-center md:flex lg:flex">
 					<Icon icon="cryptocurrency:beam" width="36" height="36" style="color: #2314f5" />
 				</div>
 				<div class="hidden sm:ml-6 sm:block">
-					<div class="flex space-x-4 m-1">
-						<div class="content-center mx-auto hover:bg-white rounded-md px-3 py-2">
+					<div class="m-1 flex space-x-4">
+						<div class="mx-auto content-center rounded-md px-3 py-2 hover:bg-white">
 							<a
 								href="#"
-								class="text-white hover:bg-white hover:text-cyan-500 rounded-md px-3 py-2 text-sm font-medium"
+								class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
 							>
 								<svg
-									class="h-6 w-6 text-white hover:text-cyan-500 mx-auto text-center"
+									class="mx-auto h-6 w-6 text-center text-white hover:text-cyan-500"
 									width="20"
 									height="20"
 									viewBox="0 0 24 24"
@@ -60,13 +71,13 @@
 								<p>Dashboard</p>
 							</a>
 						</div>
-						<div class="content-center mx-auto hover:bg-white rounded-md px-3 py-2">
+						<div class="mx-auto content-center rounded-md px-3 py-2 hover:bg-white">
 							<a
 								href="#"
-								class="text-white hover:bg-white hover:text-cyan-500 rounded-md px-3 py-2 text-sm font-medium"
+								class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
 							>
 								<svg
-									class="h-6 w-6 text-white hover:text-cyan-500 mx-auto text-center"
+									class="mx-auto h-6 w-6 text-center text-white hover:text-cyan-500"
 									viewBox="0 0 24 24"
 									fill="none"
 									stroke="currentColor"
@@ -80,13 +91,13 @@
 								<p>Parts</p>
 							</a>
 						</div>
-						<div class="content-center mx-auto hover:bg-white rounded-md px-3 py-2">
+						<div class="mx-auto content-center rounded-md px-3 py-2 hover:bg-white">
 							<a
 								href="#"
-								class="text-white hover:bg-white hover:text-cyan-500 rounded-md px-3 py-2 text-sm font-medium"
+								class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
 							>
 								<svg
-									class="h-6 w-6 text-white hover:text-cyan-500 mx-auto text-center"
+									class="mx-auto h-6 w-6 text-center text-white hover:text-cyan-500"
 									width="24"
 									height="24"
 									viewBox="0 0 24 24"
@@ -107,15 +118,15 @@
 				</div>
 			</div>
 			<div
-				class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 m-2"
+				class="absolute inset-y-0 right-0 m-2 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
 			>
-				<div class="content-center mx-auto hover:bg-white rounded-md">
+				<div class="mx-auto content-center rounded-md hover:bg-white">
 					<a
 						href="#"
-						class="text-white hover:bg-white hover:text-cyan-500 rounded-md px-3 py-2 text-sm font-medium"
+						class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
 					>
 						<svg
-							class="h-6 w-6 text-white hover:text-cyan-500 mx-auto text-center"
+							class="mx-auto h-6 w-6 text-center text-white hover:text-cyan-500"
 							width="24"
 							height="24"
 							viewBox="0 0 24 24"
@@ -133,13 +144,13 @@
 						<p>Setting</p>
 					</a>
 				</div>
-				<div class="content-center mx-auto hover:bg-white rounded-md px-3 py-2 m-1">
+				<div class="m-1 mx-auto content-center rounded-md px-3 py-2 hover:bg-white">
 					<a
 						href="#"
-						class="text-white hover:bg-white hover:text-cyan-500 rounded-md px-3 py-2 text-sm font-medium"
+						class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
 					>
 						<svg
-							class="h-6 w-6 text-white hover:text-cyan-500 mx-auto text-center"
+							class="mx-auto h-6 w-6 text-center text-white hover:text-cyan-500"
 							width="24"
 							height="24"
 							viewBox="0 0 24 24"
@@ -188,13 +199,18 @@
 
 	{#if isDivVisible}
 		<div
-			class="fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center z-50 transition-opacity duration-300"
+			class="fixed left-0 top-0 z-50 flex h-full w-full bg-black bg-opacity-50 transition-opacity duration-500"
 		>
+			<!-- <div
+			class="fixed left-0 top-0 z-50 flex h-full w-full items-center justify-center bg-black bg-opacity-50 transition-opacity duration-500"
+		> -->
+			<!-- class="relative h-full w-[40%] -translate-x-full transform bg-cyan-500 transition-transform duration-500 ease-in-out" -->
 			<div
-				class="bg-cyan-500 w-[40%] h-full transform -translate-x-full transition-transform duration-300 ease-in-out relative"
+				class="relative h-full w-[40%] bg-green-500"
+				transition:slide={{ delay: 200, duration: 500, easing: quintOut, axis: 'x' }}
 			>
 				<button
-					class="flex text-white p-2 m-2 rounded hover:text-cyan-500 hover:bg-white absolute top-0 right-0"
+					class="absolute right-0 top-0 m-2 flex rounded p-2 text-white hover:bg-white hover:text-cyan-500"
 					on:click={toggleDivVisibility}
 				>
 					<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -207,26 +223,20 @@
 					</svg>
 				</button>
 
-				<!-- <div class="space-y-1 px-2 pb-3 pt-2 absolute top-[40px] left-14">
-				<a href="#" class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center">Dashboard</a>
-				<a href="#" class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center">Parts</a>
-				<a href="#" class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center">Estimation</a>
-			</div> -->
-
-				<div class="space-y-1 px-2 pb-3 pt-2 mt-[4rem]">
+				<div class="mt-[4rem] space-y-1 px-2 pb-3 pt-2">
 					<a
 						href="#"
-						class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center"
+						class="mx-auto block rounded-md px-3 py-2 text-center text-base font-medium text-white hover:bg-white hover:text-cyan-500"
 						>Dashboard</a
 					>
 					<a
 						href="#"
-						class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center"
+						class="mx-auto block rounded-md px-3 py-2 text-center text-base font-medium text-white hover:bg-white hover:text-cyan-500"
 						>Parts</a
 					>
 					<a
 						href="#"
-						class="text-white block rounded-md px-3 py-2 text-base font-medium hover:bg-white hover:text-cyan-500 mx-auto text-center"
+						class="mx-auto block rounded-md px-3 py-2 text-center text-base font-medium text-white hover:bg-white hover:text-cyan-500"
 						>Estimation</a
 					>
 				</div>
