@@ -2,7 +2,7 @@
     import "../app.css";
   </script>
   
-  <div class="bg-slate-300 h-screen">
+  <div class="bg-slate-100 h-fit">
     <slot />
 
   </div>

@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	let isMenuOpen = false;
 	let isButtonClick = false;
 
@@ -6,10 +6,14 @@
 		isButtonClick = !isButtonClick;
 		isMenuOpen = !isMenuOpen;
 	}
+
+	function Menu(e: any) {
+		e.name === 'menu' ? (e.name = 'close') : (e.name = 'menu');
+	}
 </script>
 
 <nav class=" navbar-center bg-blue-400 relative h-auto">
-	<div class="flex items-center justify-between items-stretch">
+	<div class="flex items-center justify-between px-3">
 		<a href="/">
 			<img src="logo.webp" alt="" class="max-w-[65px] p-1" />
 		</a>
@@ -19,7 +23,7 @@
 				<a href="/">
 					<div class="tooltip tooltip-bottom" data-tip="dashboard">
 						<button
-							class="ml-5 w-20 rounded-sm hover:bg-white hover:bg-opacity-55 text-white hover:text-black font-medium duration-300 px-1 py-1"
+							class="ml-2 w-20 rounded-xl hover:bg-white hover:bg-opacity-55 text-white hover:text-black font-medium duration-300 px-1 py-1"
 							aria-current="page"
 						>
 							<svg
@@ -45,7 +49,7 @@
 				<a href="/">
 					<div class="tooltip tooltip-bottom" data-tip="Parts">
 						<button
-							class="rounded-sm w-20 hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-1 py-1"
+							class="rounded-xl w-20 hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-1 py-1"
 						>
 							<svg
 								class="h-6 w-6 mx-auto text-center"
@@ -71,7 +75,7 @@
 				<a href="/">
 					<div class="tooltip tooltip-bottom" data-tip="Estimation">
 						<button
-							class=" rounded-sm w-20 hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-1 py-1"
+							class=" rounded-xl w-20 hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-1 py-1"
 						>
 							<svg
 								class="h-6 w-6 mx-auto text-center"
@@ -100,7 +104,7 @@
 				<a href="/">
 					<div class="tooltip tooltip-bottom" data-tip="Settings">
 						<button
-							class=" rounded-sm w-20 hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-1 py-1"
+							class=" rounded-xl w-20 hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-1 py-1"
 						>
 							<div>
 								<svg
@@ -133,7 +137,7 @@
 				<a href="/" class="">
 					<div class="tooltip tooltip-bottom" data-tip="Help">
 						<button
-							class=" w-20 rounded-sm mx-auto hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-2 py-1"
+							class=" w-20 rounded-xl mx-auto hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-2 py-1"
 							aria-current="page"
 						>
 							<svg
@@ -247,7 +251,7 @@
 						<hr aria-orientation="horizontal" />
 
 						<li>
-							<a href="/"	>
+							<a href="/">
 								<button class="flex items-center">
 									<span>
 										<svg
@@ -280,7 +284,7 @@
 		<button tabindex="0" class="md:hidden cursor-pointer" on:click={toggleMenu}>
 			{#if isButtonClick}
 				<svg
-					class="mr-1"
+					class="mr-2"
 					xmlns="http://www.w3.org/2000/svg"
 					xmlns:xlink="http://www.w3.org/1999/xlink"
 					fill="#000000"
@@ -301,6 +305,7 @@
 				</svg>
 			{:else}
 				<svg
+				class="mr-2 "
 					width="30"
 					height="30"
 					viewBox="0 0 24 24"
@@ -314,26 +319,28 @@
 			{/if}
 		</button>
 	</div>
-</nav>
-
-<div class="flex justify-end md:hidden">
-	<div class="bg-white text-black w-full shadow-lg rounded-md duration-500 transition-all">
-		<ul class:open={isMenuOpen} class="font-semibold px-5 py-3">
-			<li class="mb-2">
+	<!-- hamburger menu contents for small devices -->
+	<div class="md:hidden bg-white rounded-sm p-0">
+		<ul
+			class:open={isMenuOpen}
+			class=" font-semibold px-2 py-3 cursor-pointer transition-all ease-in duration-500"
+		>
+			<li class="mb-2 hover:bg-slate-200 duration-300 rounded-md p-2">
 				<a href="/">Dashboard</a>
 			</li>
-			<li class="mb-2">
+			<li class="mb-2 hover:bg-slate-200 duration-300 rounded-md p-2">
 				<a href="/">Parts</a>
 			</li>
-			<li class="mb-2">
+			<li class="mb-2 hover:bg-slate-200 duration-300 rounded-md p-2">
 				<a href="/">Estimation</a>
 			</li>
-			<li class="mb-2">
+			<li class="mb-2 hover:bg-slate-200 duration-300 rounded-md p-2">
 				<a href="/">Settings</a>
 			</li>
-			<li class="mb-2">
+			<li class="mb-2 hover:bg-slate-200 duration-300 rounded-md p-2">
 				<a href="/">Help</a>
 			</li>
 		</ul>
+		<hr>
 	</div>
-</div>
+</nav>
