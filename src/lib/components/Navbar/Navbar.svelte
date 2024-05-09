@@ -8,31 +8,24 @@
 	}
 </script>
 
-<nav class="bg-blue-400 p-3 shadow-inner shadow-blue-700 shadow-md">
-	<div class="flex items-center justify-between">
+<nav class=" navbar-center bg-blue-400 relative h-auto">
+	<div class="flex items-center justify-between items-stretch">
 		<a href="/">
-			<img src="logo.webp" alt="" class="h-10" />
+			<img src="logo.webp" alt="" class="max-w-[65px] p-1" />
 		</a>
 
 		<div class="flex justify-between items-center flex-1 hidden md:flex">
 			<div class="flex items-center">
 				<a href="/">
-					<div
-						class="relative before:content-[attr(data-tip)] before:absolute before:px-3 before:py-2 before:left-2 before:bottom-1 before:w-max before:max-w-xs before:-translate-x before:translate-y-16 before:bg-slate-700 before:text-white before:rounded-md before:opacity-0 before:transition-all
-						
-						after:absolute after:left-14 after:-bottom-5 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-b-gray-700 after:border-l-transparent after:border-t-transparent after:border-r-transparent after:opacity-0 after:transition-all
-						hover:before:opacity-100 hover:after:opacity-100
-						"
-						data-tip="Dashboard"
-					>
+					<div class="tooltip tooltip-bottom" data-tip="dashboard">
 						<button
-							class="ml-5 rounded-sm hover:bg-white text-white hover:text-blue-400 h-inherit duration-300 px-1 py-1"
+							class="ml-5 w-20 rounded-sm hover:bg-white hover:bg-opacity-55 text-white hover:text-black font-medium duration-300 px-1 py-1"
 							aria-current="page"
 						>
 							<svg
 								class="h-6 w-6 mx-auto text-center"
-								width="20"
-								height="20"
+								width="12"
+								height="12"
 								viewBox="0 0 24 24"
 								stroke-width="2"
 								stroke="currentColor"
@@ -44,27 +37,20 @@
 								<line x1="13.45" y1="11.55" x2="15.5" y2="9.5" />
 								<path d="M6.4 20a9 9 0 1 1 11.2 0Z" />
 							</svg>
-							<p class=" text-sm">Dashboard</p>
+							<p class=" text-xs">Dashboard</p>
 						</button>
 					</div>
 				</a>
 
 				<a href="/">
-					<div
-						class="relative before:content-[attr(data-tip)] before:absolute before:px-3 before:py-2 before:left-2 before:bottom-1 before:w-max before:max-w-xs before:translate-x-1 before:translate-y-16 before:bg-slate-700 before:text-white before:rounded-md before:opacity-0 before:transition-all
-						
-					after:absolute after:left-11 after:-bottom-5 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-b-gray-700 after:border-l-transparent after:border-t-transparent after:border-r-transparent after:opacity-0 after:transition-all
-					hover:before:opacity-100 hover:after:opacity-100
-					"
-						data-tip="Items"
-					>
+					<div class="tooltip tooltip-bottom" data-tip="Parts">
 						<button
-							class="mr-1 ml-1 rounded-sm w-20 hover:bg-white text-white hover:text-blue-400 duration-300 h-inherit px-1 py-1"
+							class="rounded-sm w-20 hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-1 py-1"
 						>
 							<svg
 								class="h-6 w-6 mx-auto text-center"
-								width="20"
-								height="20"
+								width="12"
+								height="12"
 								viewBox="0 0 24 24"
 								stroke-width="2"
 								stroke="currentColor"
@@ -77,27 +63,20 @@
 								/>
 								<path d="M4 13h3l3 3h4l3 -3h3" />
 							</svg>
-							<p class="text-sm">Items</p>
+							<p class="text-xs">Parts</p>
 						</button>
 					</div>
 				</a>
 
 				<a href="/">
-					<div
-						class="relative before:content-[attr(data-tip)] before:absolute before:px-3 before:py-2 before:left-2 before:bottom-1 before:w-max before:max-w-xs before:-translate-x-4 before:translate-y-16 before:bg-slate-700 before:text-white before:rounded-md before:opacity-0 before:transition-all
-						
-						after:absolute after:left-9 after:-bottom-5 after:h-0 after:w-0 after:-translate-x-1/2 after:border-8 after:border-b-gray-700 after:border-l-transparent after:border-t-transparent after:border-r-transparent after:opacity-0 after:transition-all
-						hover:before:opacity-100 hover:after:opacity-100
-						"
-						data-tip="Estimate"
-					>
+					<div class="tooltip tooltip-bottom" data-tip="Estimation">
 						<button
-							class="mr-1 ml-1 rounded-sm hover:bg-white text-white hover:text-blue-400 duration-300 h-inherit px-1 py-1"
+							class=" rounded-sm w-20 hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-1 py-1"
 						>
 							<svg
 								class="h-6 w-6 mx-auto text-center"
-								width="20"
-								height="20"
+								width="12"
+								height="12"
 								viewBox="0 0 24 24"
 								stroke-width="2"
 								stroke="currentColor"
@@ -111,54 +90,56 @@
 								<path d="M4 16m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
 								<path d="M20 8m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0"></path>
 							</svg>
-							<p class="text-sm">Estimate</p>
+							<p class="text-xs">Estimation</p>
 						</button>
 					</div>
 				</a>
 			</div>
 
-			<div>
+			<div class="flex items-center">
 				<a href="/">
-					<button
-						class="mr-1 ml-1 rounded-sm hover:bg-white text-white hover:text-blue-400 duration-300 h-inherit px-1 py-1"
-					>
-						<div>
-							<svg
-								class="h-6 w-6 mx-auto text-center"
-								width="20"
-								height="20"
-								viewBox="0 0 24 24"
-								stroke-width="2"
-								stroke="currentColor"
-								fill="none"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								<path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-								<path d="M4 6l8 0"></path>
-								<path d="M16 6l4 0"></path>
-								<path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-								<path d="M4 12l2 0"></path>
-								<path d="M10 12l10 0"></path>
-								<path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-								<path d="M4 18l11 0"></path>
-								<path d="M19 18l1 0"></path>
-							</svg>
-							<p class=" text-sm">Settings</p>
-						</div>
-					</button>
+					<div class="tooltip tooltip-bottom" data-tip="Settings">
+						<button
+							class=" rounded-sm w-20 hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-1 py-1"
+						>
+							<div>
+								<svg
+									class="h-6 w-6 mx-auto text-center"
+									width="12"
+									height="12"
+									viewBox="0 0 24 24"
+									stroke-width="2"
+									stroke="currentColor"
+									fill="none"
+									stroke-linecap="round"
+									stroke-linejoin="round"
+								>
+									<path d="M14 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+									<path d="M4 6l8 0"></path>
+									<path d="M16 6l4 0"></path>
+									<path d="M8 12m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+									<path d="M4 12l2 0"></path>
+									<path d="M10 12l10 0"></path>
+									<path d="M17 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+									<path d="M4 18l11 0"></path>
+									<path d="M19 18l1 0"></path>
+								</svg>
+								<p class=" text-xs">Settings</p>
+							</div>
+						</button>
+					</div>
 				</a>
 
-				<a href="/">
-					<button
-						class="mr-1 ml-1 w-10 rounded-sm hover:bg-white text-white hover:text-blue-400 duration-300 px-1 py-1"
-						aria-current="page"
-					>
-						<div>
+				<a href="/" class="">
+					<div class="tooltip tooltip-bottom" data-tip="Help">
+						<button
+							class=" w-20 rounded-sm mx-auto hover:bg-white hover:bg-opacity-55 text-white hover:text-black duration-300 px-2 py-1"
+							aria-current="page"
+						>
 							<svg
 								class="h-6 w-6 mx-auto text-center"
-								width="20"
-								height="20"
+								width="12"
+								height="12"
 								viewBox="0 0 24 24"
 								stroke-width="2"
 								stroke="currentColor"
@@ -173,51 +154,150 @@
 								<path d="M5.65 5.65l3.35 3.35"></path>
 								<path d="M18.35 5.65l-3.35 3.35"></path>
 							</svg>
-							<p class=" text-sm">Help</p>
-						</div>
-					</button>
+							<p class=" text-xs">Help</p>
+						</button>
+					</div>
 				</a>
 
-				<button class="">
-					<svg
-						height="40"
-						width="40"
-						version="1.1"
-						id="Layer_1"
-						xmlns="http://www.w3.org/2000/svg"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
-						viewBox="0 0 512 512"
-						xml:space="preserve"
-					>
-						<path
-							style="fill:#FFFFFF;"
-							d="M256,508C117.04,508,4,394.96,4,256S117.04,4,256,4s252,113.04,252,252S394.96,508,256,508z"
-						/>
-						<path
-							style="fill:#D6D6D6;"
-							d="M256,8c136.752,0,248,111.248,248,248S392.752,504,256,504S8,392.752,8,256S119.248,8,256,8 M256,0	C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0L256,0z"
-						/>
-						<g>
-							<ellipse style="fill:#0BA4E0;" cx="256" cy="175.648" rx="61.712" ry="60.48" />
+				<!-- Profile icon -->
+				<div class="dropdown dropdown-end mr-1">
+					<button class="ml-1">
+						<svg
+							height="50"
+							width="50"
+							version="1.1"
+							id="Layer_1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							viewBox="0 0 512 512"
+							xml:space="preserve"
+						>
 							<path
-								style="fill:#0BA4E0;"
-								d="M362.592,360.624c0-57.696-47.728-104.464-106.592-104.464s-106.592,46.768-106.592,104.464H362.592
-		z"
+								style="fill:#FFFFFF;"
+								d="M256,508C117.04,508,4,394.96,4,256S117.04,4,256,4s252,113.04,252,252S394.96,508,256,508z"
 							/>
-						</g>
-					</svg>
-				</button>
+							<path
+								style="fill:#D6D6D6;"
+								d="M256,8c136.752,0,248,111.248,248,248S392.752,504,256,504S8,392.752,8,256S119.248,8,256,8 M256,0	C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0L256,0z"
+							/>
+							<g>
+								<ellipse style="fill:#0BA4E0;" cx="256" cy="175.648" rx="61.712" ry="60.48" />
+								<path
+									style="fill:#0BA4E0;"
+									d="M362.592,360.624c0-57.696-47.728-104.464-106.592-104.464s-106.592,46.768-106.592,104.464H362.592
+		z"
+								/>
+							</g>
+						</svg>
+					</button>
+
+					<!-- after click options -->
+					<ul class="menu dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+						<li>
+							<a href="/" class="">
+								<button class="flex items-center">
+									<span class="chakra-menu__icon-wrapper css-7halv9">
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="tabler-icon tabler-icon-receipt-2 chakra-menu__icon"
+											focusable="false"
+											aria-hidden="true"
+											><path
+												d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2"
+											></path><path
+												d="M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5m2 0v1.5m0 -9v1.5"
+											></path></svg
+										></span
+									><span class="ml-2">Plans and pricing</span></button
+								>
+							</a>
+						</li>
+						<li>
+							<a href="/">
+								<button class="flex items-center">
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="tabler-icon tabler-icon-info-circle chakra-menu__icon"
+											focusable="false"
+											aria-hidden="true"
+											><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0"></path><path d="M12 9h.01"
+											></path><path d="M11 12h1v4h1"></path></svg
+										></span
+									><span class="ml-2">About</span></button
+								></a
+							>
+						</li>
+						<hr aria-orientation="horizontal" />
+
+						<li>
+							<a href="/"	>
+								<button class="flex items-center">
+									<span>
+										<svg
+											xmlns="http://www.w3.org/2000/svg"
+											width="16"
+											height="16"
+											viewBox="0 0 24 24"
+											fill="none"
+											stroke="currentColor"
+											stroke-width="2"
+											stroke-linecap="round"
+											stroke-linejoin="round"
+											class="tabler-icon tabler-icon-logout chakra-menu__icon"
+											focusable="false"
+											aria-hidden="true"
+											><path
+												d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2"
+											></path><path d="M9 12h12l-3 -3"></path><path d="M18 15l3 -3"></path></svg
+										></span
+									><span class="ml-2">Login</span></button
+								></a
+							>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 
-		<button class="md:hidden cursor-pointer" on:click={toggleMenu}>
+		<!-- Hamburger menu for small devices -->
+		<button tabindex="0" class="md:hidden cursor-pointer" on:click={toggleMenu}>
 			{#if isButtonClick}
-			<svg class="mr-1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000" height="20" width="20" version="1.1" id="Layer_1" viewBox="0 0 512 512" xml:space="preserve">
-				<g>
+				<svg
+					class="mr-1"
+					xmlns="http://www.w3.org/2000/svg"
+					xmlns:xlink="http://www.w3.org/1999/xlink"
+					fill="#000000"
+					height="20"
+					width="20"
+					version="1.1"
+					id="Layer_1"
+					viewBox="0 0 512 512"
+					xml:space="preserve"
+				>
 					<g>
-						<polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512     512,452.922 315.076,256   "/>
+						<g>
+							<polygon
+								points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512     512,452.922 315.076,256   "
+							/>
+						</g>
 					</g>
-				</g>
 				</svg>
 			{:else}
 				<svg
@@ -237,21 +317,21 @@
 </nav>
 
 <div class="flex justify-end md:hidden">
-	<div class="bg-white text-black w-2/5 text-center">
-		<ul class:open={isMenuOpen} class="p-5 font-semibold">
-			<li class="">
+	<div class="bg-white text-black w-full shadow-lg rounded-md duration-500 transition-all">
+		<ul class:open={isMenuOpen} class="font-semibold px-5 py-3">
+			<li class="mb-2">
 				<a href="/">Dashboard</a>
 			</li>
-			<li>
-				<a href="/">Items</a>
+			<li class="mb-2">
+				<a href="/">Parts</a>
 			</li>
-			<li>
-				<a href="/">Estimate</a>
+			<li class="mb-2">
+				<a href="/">Estimation</a>
 			</li>
-			<li>
+			<li class="mb-2">
 				<a href="/">Settings</a>
 			</li>
-			<li>
+			<li class="mb-2">
 				<a href="/">Help</a>
 			</li>
 		</ul>
