@@ -20,7 +20,7 @@
 
 		<div class="flex justify-between items-center flex-1 hidden md:flex">
 			<div class="flex items-center">
-				<a href="/">
+				<a href="/dashboard">
 					<div class="tooltip tooltip-bottom" data-tip="dashboard">
 						<button
 							class="ml-2 w-20 rounded-xl hover:bg-white hover:bg-opacity-55 text-white hover:text-black font-medium duration-300 px-1 py-1"
