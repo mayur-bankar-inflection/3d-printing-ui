@@ -1,8 +1,8 @@
 <script>
+	import Nav from "$lib/components/Nav.svelte";
+
     import "../app.css";
   </script>
-  
-  <div class="bg-slate-400 h-screen">
+<Nav/>
     <slot />
 
-  </div>

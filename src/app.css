@@ -2,11 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-
-ul.open{
-    display: block;
-}
-
-ul{
-    display: none;
-}
