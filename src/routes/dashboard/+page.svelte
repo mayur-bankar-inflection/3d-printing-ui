@@ -28,8 +28,8 @@
 
 	<div class="mt-4 flex flex-col lg:flex-row lg:items-center">
 		<div class="flex items-center">
-			<p class="bg-gradient-to-tr from-blue-500 to-purple-200 rounded-full h-14">
-				<img src="import.png" alt="" class="p-3" />
+			<p class="bg-gradient-to-tr from-blue-500 to-purple-200 rounded-full h-20">
+				<img src="import.png" alt="" class="p-4 w-20" />
 			</p>
 
 			<div class="ml-3 w-2/3">
@@ -43,8 +43,8 @@
 		</div>
 
 		<div class="flex items-center">
-			<p class="bg-gradient-to-tr from-blue-500 to-purple-200 rounded-full h-14">
-				<img src="evaluate.png" alt="" class="p-3 w-14" />
+			<p class="bg-gradient-to-tr from-blue-500 to-purple-200 rounded-full h-20">
+				<img src="evaluate.png" alt="" class="p-3 w-20" />
 			</p>
 
 			<div class="ml-3 w-2/3">
@@ -58,8 +58,8 @@
 		</div>
 
 		<div class="flex items-center">
-			<div class="bg-gradient-to-tr from-blue-500 to-purple-200 rounded-full h-14">
-				<img src="import.png" alt="" class="p-3" />
+			<div class="bg-gradient-to-tr from-blue-500 to-purple-200 rounded-full h-20">
+				<img src="import.png" alt="" class="p-3 w-20" />
 			</div>
 
 			<div class="ml-3 w-3/4">
@@ -73,8 +73,8 @@
 		</div>
 
 		<div class="flex items-center">
-			<p class="bg-gradient-to-tr from-blue-500 to-purple-200 rounded-full p-3 h-14 w-14">
-				<img src="order.png" alt="" class="w-8" />
+			<p class="bg-gradient-to-tr from-blue-500 to-purple-200 rounded-full h-20">
+				<img src="order.png" alt="" class="w-20 p-4" />
 			</p>
 
 			<div class="ml-3 w-2/3">
@@ -88,10 +88,10 @@
 	<div class="mt-16">
 		<h1 class=" font-bold text-3xl">Highlights</h1>
 
-		<div class="mt-3 flex flex-wrap">
+		<div class="mt-3 flex flex-wrap md:justify-center">
 			<div class="card card-compact md:max-w-[390px] bg-base-100 shadow-xl mr-3 mb-3">
 				<figure class=" bg-blue-400 p-3">
-					<img src="page.png" alt="page" class="w-40" />
+					<img src="page1.png" alt="page" class="w-40" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title font-bold">Single parts or bulk import</h2>
@@ -104,7 +104,7 @@
 
 			<div class="card card-compact md:max-w-[390px] bg-base-100 shadow-xl mr-3 mb-3">
 				<figure class=" bg-rose-400 p-3">
-					<img src="import.png" alt="import" class="w-40" />
+					<img src="import1.png" alt="import" class="w-40" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title font-bold">Comprehensive analysis</h2>
