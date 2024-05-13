@@ -4,7 +4,7 @@
 </script>
 
 <!-- <div class="h-5 w-full bg-red-500"></div> -->
-<nav class=" h-fit w-full bg-rose-500">
+<nav class=" h-fit w-full bg-violet-500">
 	<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 		<div class="relative flex h-16 w-full items-center justify-between px-2">
 			<div class=" sm:hidden">
@@ -170,32 +170,32 @@
 
 				
 
-				<div class="ml-3">
-					<div>
-						<button
-							type="button"
-							class="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-							id="user-menu-button"
-							aria-expanded="false"
-							aria-haspopup="true"
-						>
-							<svg
-								class="h-12 w-12 text-white hover:text-cyan-900"
-								fill="none"
-								viewBox="0 0 24 24"
-								stroke="currentColor"
-							>
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-								/>
-							</svg>
-						</button>
 					</div>
-				</div>
-			</div>
+					<div class="ml-3 sm:flex">
+						<div>
+							<button
+								type="button"
+								class="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+								id="user-menu-button"
+								aria-expanded="false"
+								aria-haspopup="true"
+							>
+								<svg
+									class="h-12 w-12 text-white hover:text-cyan-900"
+									fill="none"
+									viewBox="0 0 24 24"
+									stroke="currentColor"
+								>
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+									/>
+								</svg>
+							</button>
+						</div>
+					</div>
 		</div>
 	</div>
 </nav>
