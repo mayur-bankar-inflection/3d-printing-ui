@@ -11,7 +11,7 @@
 				<Sheet.Root>
 					<Sheet.Trigger asChild let:builder>
 						<Button builders={[builder]} variant="outline"
-							><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" >
+							><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 								<path
 									stroke-linecap="round"
 									stroke-linejoin="round"
@@ -125,77 +125,74 @@
 				</div>
 			</div>
 
-			<div class=" sm:flex flex-row items-center  hidden flex-shrink-0  md:flex lg:flex">
+			<div class=" hidden flex-shrink-0 flex-row items-center sm:flex md:flex lg:flex">
 				<button
-							class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
+					class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
+				>
+					<svg
+						class="mx-auto h-6 w-6 text-center"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" />
+						<path
+							d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
+						/> <circle cx="12" cy="12" r="3" /></svg
+					>
+					<p>Setting</p>
+				</button>
+				<button
+					class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
+				>
+					<svg
+						class="mx-auto h-6 w-6 text-center"
+						width="24"
+						height="24"
+						viewBox="0 0 24 24"
+						stroke-width="2"
+						stroke="currentColor"
+						fill="none"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path stroke="none" d="M0 0h24v24H0z" /> <circle cx="12" cy="12" r="9" />
+						<line x1="12" y1="17" x2="12" y2="17.01" />
+						<path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" /></svg
+					>
+					<p>Help</p>
+				</button>
+			</div>
+			<div class="ml-3 sm:flex">
+				<div>
+					<button
+						type="button"
+						class="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+						id="user-menu-button"
+						aria-expanded="false"
+						aria-haspopup="true"
+					>
+						<svg
+							class="h-12 w-12 text-white hover:text-cyan-900"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
 						>
-							<svg
-								class="mx-auto h-6 w-6 text-center"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
-								stroke-width="2"
-								stroke="currentColor"
-								fill="none"
+							<path
 								stroke-linecap="round"
 								stroke-linejoin="round"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" />
-								<path
-									d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"
-								/> <circle cx="12" cy="12" r="3" /></svg
-							>
-							<p>Setting</p>
-						</button>
-						<button
-							class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
-						>
-							<svg
-								class="mx-auto h-6 w-6 text-center"
-								width="24"
-								height="24"
-								viewBox="0 0 24 24"
 								stroke-width="2"
-								stroke="currentColor"
-								fill="none"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							>
-								<path stroke="none" d="M0 0h24v24H0z" /> <circle cx="12" cy="12" r="9" />
-								<line x1="12" y1="17" x2="12" y2="17.01" />
-								<path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" /></svg
-							>
-							<p>Help</p>
-						</button>
-
-				
-
-					</div>
-					<div class="ml-3 sm:flex">
-						<div>
-							<button
-								type="button"
-								class="relative flex rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-								id="user-menu-button"
-								aria-expanded="false"
-								aria-haspopup="true"
-							>
-								<svg
-									class="h-12 w-12 text-white hover:text-cyan-900"
-									fill="none"
-									viewBox="0 0 24 24"
-									stroke="currentColor"
-								>
-									<path
-										stroke-linecap="round"
-										stroke-linejoin="round"
-										stroke-width="2"
-										d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
-									/>
-								</svg>
-							</button>
-						</div>
-					</div>
+								d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+							/>
+						</svg>
+					</button>
+				</div>
+			</div>
 		</div>
 	</div>
 </nav>
