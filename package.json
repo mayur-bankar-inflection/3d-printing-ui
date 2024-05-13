@@ -1,5 +1,5 @@
 {
-	"name": "navbar-task",
+	"name": "components.json",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -33,5 +33,19 @@
 		"typescript": "^5.0.0",
 		"vite": "^5.0.3"
 	},
-	"type": "module"
+	"type": "module",
+	"dependencies": {
+		"bits-ui": "^0.21.7",
+		"class-variance-authority": "^0.7.0",
+		"clsx": "^2.1.1",
+		"lucide-react": "^0.378.0",
+		"lucide-svelte": "^0.378.0",
+		"tailwind-merge": "^2.3.0",
+		"tailwind-variants": "^0.2.1",
+		"tailwindcss-animate": "^1.0.7"
+	},
+	"description": "Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).",
+	"main": "postcss.config.js",
+	"author": "",
+	"license": "ISC"
 }

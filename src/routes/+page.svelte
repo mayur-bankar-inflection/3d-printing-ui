@@ -3,5 +3,4 @@
 import Navbar from '$lib/components/Navbar.svelte'
 </script>
 
-<Navbar />
 <Hero />

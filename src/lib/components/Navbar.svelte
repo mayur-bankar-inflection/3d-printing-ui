@@ -10,9 +10,10 @@
 	function Menu(e: any) {
 		e.name === 'menu' ? (e.name = 'close') : (e.name = 'menu');
 	}
+	
 </script>
 
-<nav class=" navbar-center bg-blue-400 relative h-auto">
+<nav class=" navbar-center bg-teal-700 relative h-auto">
 	<div class="flex items-center justify-between px-3">
 		<a href="/">
 			<img src="logo.webp" alt="" class="max-w-[65px] p-1" />
@@ -289,7 +290,7 @@
 					xmlns:xlink="http://www.w3.org/1999/xlink"
 					fill="#000000"
 					height="20"
-					width="20"
+					width="20" 
 					version="1.1"
 					id="Layer_1"
 					viewBox="0 0 512 512"
