@@ -61,7 +61,7 @@
 				class="flex flex-1 items-center justify-center p-1 py-2 sm:items-stretch sm:justify-start"
 			>
 				<div class="hidden flex-shrink-0 items-center md:flex lg:flex lg:space-x-6">
-					<img src="logo.png" alt="" class="h-10 w-10" />
+					<img src="Navbar/logo.png" alt="" class="h-10 w-10" />
 					<button
 						class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
 					>
@@ -186,7 +186,7 @@
 							<path
 								stroke-linecap="round"
 								stroke-linejoin="round"
-								stroke-width="2"
+								stroke-width="1"
 								d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
 							/>
 						</svg>
