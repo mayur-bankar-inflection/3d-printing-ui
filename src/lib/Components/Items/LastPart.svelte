@@ -4,7 +4,7 @@
 
 <div class="space-y-4">
 	<!-- <img src="items/cube.png" alt="3D printing UI" class="mx-auto h-[200px] w-[300px]" /> -->
-	<div class="mx-auto w-[450px]">
+	<div class="mx-auto w-full sm:w-[340px]">
 		<AspectRatio ratio={16 / 9} class="bg-muted">
 			<img src="Items/OIP.jpg" alt="..." class="mx-auto h-full w-full rounded-md object-cover" />
 		</AspectRatio>

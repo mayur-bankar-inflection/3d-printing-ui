@@ -8,7 +8,7 @@
 
 <div class="h-fit w-full space-y-4 bg-slate-200 p-8">
 	<FirstPart />
-	<div class=" flex flex-col md:flex-row">
+	<div class="flex flex-col md:flex-row xl:flex-row 2xl:flex-row">
 		<SecondPart
 			imageurl={'Items/import.png'}
 			name={'Import'}
@@ -35,8 +35,8 @@
 		/>
 	</div>
 
-	<div class="h-fit w-full rounded-md bg-white p-6 shadow-md">
-		<div class="h-full rounded-sm border border-dashed border-neutral-500 p-8">
+	<div class="w-full rounded-md bg-white p-6 shadow-md">
+		<div class="border border-dashed border-neutral-500 p-8">
 			<ThirdPart imageurl={'Items/upload.png'} />
 		</div>
 	</div>
@@ -60,16 +60,14 @@
 					</div>
 				</div> -->
 
-	<div
-		class="flex h-fit w-full flex-col space-y-2 rounded-md shadow-md sm:flex-col sm:p-4 sm:py-6 lg:flex-row"
-	>
+	<div class="flex flex-col space-y-2 rounded-md shadow-md sm:flex-col sm:p-4 sm:py-6 lg:flex-row">
 		<Cards />
 		<Cards />
 		<Cards />
 		<Cards />
 	</div>
 
-	<div class="mx-auto h-fit w-full bg-slate-300 px-12 py-10">
+	<div class="mx-auto h-fit w-full bg-slate-300 px-12 py-10 sm:w-fit">
 		<LastPart />
 	</div>
 </div>
