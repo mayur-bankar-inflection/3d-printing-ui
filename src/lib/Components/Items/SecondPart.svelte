@@ -12,7 +12,7 @@
 		<img src={imageurl} alt="" class="my-auto h-14 w-14" />
 		<div class="flex flex-col items-center p-4">
 			<h1 class="font-bold text-black">{name}</h1>
-			<p class="text-slate-700">{description}</p>
+			<p class="text-slate-700 text-justify content-between">{description}</p>
 		</div>
 		<img src="Items/arrow.png" class="my-auto h-8 w-20" />
 	</div>
