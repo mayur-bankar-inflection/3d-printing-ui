@@ -21,10 +21,11 @@
 							</svg></Button
 						>
 					</Sheet.Trigger>
+
 					<Sheet.Content side="left" class="space-y-2">
 						<Button class="hover:bg-white"
 							><img
-								src="acc.png"
+								src="Navbar/acc.png"
 								alt="Account Icon"
 								class="mx-auto block h-8 w-8 rounded-md"
 							/></Button
@@ -80,6 +81,8 @@
 							<line x1="13.45" y1="11.55" x2="15.5" y2="9.5" />
 							<path d="M6.4 20a9 9 0 1 1 11.2 0Z" /></svg
 						>
+
+						
 
 						<p>Dashboard</p>
 					</button>
