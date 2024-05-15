@@ -1,5 +1,5 @@
 <script type="ts">
-	import * as Card from '$lib/components/ui/card';
+	import * as Card from '$lib/Components/ui/card';
 	import Button from './ui/button/button.svelte';
 </script>
 

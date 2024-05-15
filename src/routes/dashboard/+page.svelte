@@ -1,6 +1,6 @@
 <script type="ts">
 	import { Button } from '$lib/Components/ui/button';
-	import * as Card from '$lib/components/ui/card';
+	import * as Card from '$lib/Components/ui/card';
 </script>
 
 <div class="my-8 text-center text-xl font-bold text-zinc-800 lg:mt-16 lg:text-2xl">DASHBOARD</div>
