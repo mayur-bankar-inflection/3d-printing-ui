@@ -1,3 +1,7 @@
+<script>
+	import Button from "$lib/Components/ui/button/button.svelte";
+
+</script>
 <div class="mx-auto mt-8 max-w-lg p-8">
 	<form>
 		<div class="w-full p-2">
@@ -53,10 +57,10 @@
 			</div>
 		</div>
 		<div class="w-full p-2">
-			<button
+			<Button
 				type="submit"
-				class="w-full rounded bg-zinc-800 px-4 py-2 text-lg font-semibold text-white hover:bg-black"
-				>Submit</button
+				class="w-full rounded  px-4 py-2 text-lg font-semibold text-white hover:bg-black"
+				>Submit</Button
 			>
 		</div>
 	</form>

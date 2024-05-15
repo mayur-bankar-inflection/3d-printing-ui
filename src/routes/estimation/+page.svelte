@@ -171,7 +171,7 @@
 
 <div class="my-6 flex flex-wrap items-center justify-center">
 	<p class="p-4 text-lg font-semibold">Your price incl.shipping: EUR 152.15</p>
-	<Button class="mx-4 border-2 bg-transparent text-black  hover:text-white"
+	<Button class="mx-4 border-2  text-black  hover:text-white"
 		>Price Details and Options</Button
 	>
 	<Select.Root portal={null}>

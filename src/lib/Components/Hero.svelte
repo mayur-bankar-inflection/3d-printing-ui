@@ -40,11 +40,11 @@
 			</div>
 			<!-- Add more form fields as needed -->
 			<div class="flex w-full items-center justify-center">
-				<button
-					class=" w-full max-w-xs rounded bg-zinc-800 px-4 py-2 font-bold text-white hover:bg-black"
+				<Button
+					class=" w-full max-w-xs rounded  px-4 py-2 font-bold text-white hover:bg-black"
 				>
 					login
-				</button>
+				</Button>
 			</div>
             <div class="flex items-center justify-center mt-4">
                 <button class="px-8 py-2 max-w-xs bg-white hover:bg-slate-300 border flex gap-2 rounded-lg text-zinc-800  ">
