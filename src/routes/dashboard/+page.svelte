@@ -74,16 +74,16 @@
 	</Card.Root>
 </div>
 
-<div class="mx-4 my-8 overflow-hidden rounded-lg shadow-lg md:mx-12">
+<div class="mx-4 my-8  overflow-scroll rounded-lg shadow-lg md:mx-12">
 	<table class="w-full table-fixed">
 		<thead>
 			<tr class="bg-zinc-800">
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Name</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">AM Material</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Model</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Average Price</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Savings</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white"></th>
+				<th class="md:w-1/4 w-32 px-6 py-4 text-left font-semibold uppercase text-white">Name</th>
+				<th class="md:w-1/4 w-32 px-6 py-4 text-left font-semibold uppercase text-white">AM Material</th>
+				<th class="md:w-1/4 w-32 px-6 py-4 text-left font-semibold uppercase text-white">Model</th>
+				<th class="md:w-1/4 w-32 px-6 py-4 text-left font-semibold uppercase text-white">Average Price</th>
+				<th class="md:w-1/4 w-32 px-6 py-4 text-left font-semibold uppercase text-white">Savings</th>
+				<th class="md:w-1/4 w-32 px-6 py-4 text-left font-semibold uppercase text-white"></th>
 			</tr>
 		</thead>
 		<tbody class="bg-white">

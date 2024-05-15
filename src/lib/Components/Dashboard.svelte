@@ -79,9 +79,9 @@
 		HEIGHLIGHTS
 	</div>
 
-	<div class="mt-3 flex flex-wrap md:justify-center">
+	<div class="mt-3 flex flex-wrap justify-center">
 		<Card.Root
-			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
+			class="bg-base-100 my-3 mx-8 md:mx-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
 				<figure class="  bg-zinc-800 p-10 rounded-xl">
@@ -97,7 +97,7 @@
 		</Card.Root>
 
 		<Card.Root
-			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
+			class="bg-base-100 my-3 mx-8 md:mx-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
 				<figure class=" bg-zinc-800 p-10 rounded-xl">
@@ -114,7 +114,7 @@
 		</Card.Root>
 
 		<Card.Root
-			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
+			class="bg-base-100 my-3 mx-8 md:mx-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
 				<figure class=" bg-zinc-800 p-10 rounded-xl">
