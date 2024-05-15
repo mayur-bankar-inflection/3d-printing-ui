@@ -59,7 +59,7 @@
 
 	<div class="mt-5 w-full rounded-lg border-2 border-black">
 		<div class="border-b-2 border-black p-4 py-6 font-bold">Configuration 1, 1 model</div>
-		<div class="flex flex-col space-x-4 p-4 sm:flex-row">
+		<div class="flex flex-col space-x-0 space-y-2 p-4 sm:flex-row sm:space-x-2">
 			<div class="flex w-full flex-col space-y-4 sm:w-2/4">
 				<div
 					class="flex h-fit w-full flex-col rounded-md bg-slate-100 p-4 pb-1 sm:flex-row sm:space-x-10"
@@ -108,7 +108,7 @@
 					<p class="mx-auto flex justify-center">Extensions allowed</p>
 				</div>
 			</div>
-			<div class="  m-2 w-full space-y-4 p-2 sm:w-2/4">
+			<div class="w-full space-y-4 p-2 sm:w-2/4">
 				<div class=" mt-2">
 					<Select.Root portal={null}>
 						<Select.Trigger class="w-full">
@@ -171,9 +171,7 @@
 
 <div class="my-6 flex flex-wrap items-center justify-center">
 	<p class="p-4 text-lg font-semibold">Your price incl.shipping: EUR 152.15</p>
-	<Button class="mx-4 border-2  text-black  hover:text-white"
-		>Price Details and Options</Button
-	>
+	<Button class="mx-4 border-2  text-black  hover:text-white">Price Details and Options</Button>
 	<Select.Root portal={null}>
 		<Select.Trigger class="ml-4 w-56">
 			<Select.Value placeholder="Delivery Country" />
