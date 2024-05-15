@@ -62,7 +62,7 @@
 			Enhance Manufacturing
 		</h1>
 		<h1 class="animate__animated animate__fadeInUp text-4xl font-semibold lg:text-6xl">
-			With <span class=" font-bold text-orange-500">3D PRINTING</span>
+			With <span class=" font-bold text-yellow-500">3D PRINTING</span>
 		</h1>
 		<h3 class="animate__animated animate__fadeInUp text-lg font-light lg:text-2xl">
 			Unlock the full potential of additive manufacturing for your business

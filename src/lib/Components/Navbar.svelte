@@ -30,12 +30,12 @@
 						>
 						<Button
 							href="/"
-							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-yellow-500 hover:text-zinc-950 "
 							>Home</Button
 						>
 						<Button
 							href="/dashboard"
-							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-yellow-500 hover:text-zinc-950 "
 							>Dashboard</Button
 						>
 						<!-- <Button
@@ -45,7 +45,7 @@
 						> -->
 						<Button
 							href="/estimation"
-							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-yellow-500 hover:text-zinc-950 "
 							>Estimation</Button
 						>
 						<!-- <Button
@@ -55,7 +55,7 @@
 						> -->
 						<Button
 							href="/help"
-							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-yellow-500 hover:text-zinc-950 "
 							>Help</Button
 						>
 					</Sheet.Content>
@@ -65,9 +65,9 @@
 				class="flex flex-1 items-center justify-center p-1 py-2 sm:items-stretch sm:justify-start"
 			>
 				<div class="hidden flex-shrink-0 items-center md:flex lg:flex lg:space-x-6">
-					<img src="Navbar/logos.png" alt="" class="h-14 w-14" />
+					<img src="apexlogo.svg" alt="" class="h-36 w-36" />
 					<button
-						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-yellow-500 hover:text-white"
 					>
 					<svg
 					class="h-8 w-8 mx-auto text-white"
@@ -86,7 +86,7 @@
 						<a href="/">Home</a>
 					</button>
 					<button
-						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-yellow-500 hover:text-white"
 					>
 						<svg
 							class="mx-auto h-7 w-7 text-center"
@@ -125,7 +125,7 @@
 						<a href="/parts">Parts</a>
 					</button> -->
 					<button
-						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-yellow-500 hover:text-white"
 					>
 						<svg
 							class="mx-auto h-7 w-7 text-center"
@@ -171,7 +171,7 @@
 					<p>Setting</p>
 				</button> -->
 				<button
-					class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+					class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-yellow-500 hover:text-white"
 				>
 					<svg
 						class="mx-auto h-7 w-7 text-center"

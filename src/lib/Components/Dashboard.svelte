@@ -22,7 +22,7 @@
 		</p>
 
 		<div class="ml-3 w-2/3">
-			<h1 class=" text-xl font-semibold text-orange-500">Import</h1>
+			<h1 class=" text-xl font-semibold text-yellow-500">Import</h1>
 			<p class=" text-gray-600">Start with CAD models or whole part inventories</p>
 		</div>
 	</div>
@@ -37,7 +37,7 @@
 		</p>
 
 		<div class="ml-3 w-2/3">
-			<h1 class=" text-xl font-semibold text-orange-500">Evaluate</h1>
+			<h1 class=" text-xl font-semibold text-yellow-500">Evaluate</h1>
 			<p class=" text-gray-600">Get AM estimates and manufacturability reports</p>
 		</div>
 	</div>
@@ -52,7 +52,7 @@
 		</div>
 
 		<div class="ml-3 w-3/4">
-			<h1 class=" text-xl font-semibold text-orange-500">Refine</h1>
+			<h1 class=" text-xl font-semibold text-yellow-500">Refine</h1>
 			<p class=" text-gray-600">Find the best candidates and complete missing data</p>
 		</div>
 	</div>
@@ -67,7 +67,7 @@
 		</p>
 
 		<div class="ml-3 w-2/3">
-			<h1 class=" text-xl font-semibold text-orange-500">Order</h1>
+			<h1 class=" text-xl font-semibold text-yellow-500">Order</h1>
 			<p class=" text-gray-600">Order the parts from our service partners</p>
 		</div>
 	</div>
@@ -75,7 +75,7 @@
 
 <!-- Highlights section -->
 <div class="my-16">
-	<div class="my-8 text-center text-2xl font-bold text-zinc-800 lg:mt-16 lg:text-3xl">
+	<div class="my-8 text-center font-bold text-2xl font-yellow lg:mt-16 lg:text-3xl">
 		HEIGHLIGHTS
 	</div>
 
@@ -89,7 +89,7 @@
 				</figure>
 			</Card.Header>
 			<Card.Content>
-				<h2 class="card-title font-semibold text-xl text-orange-500">Single parts or bulk import</h2>
+				<h2 class="card-title font-semibold text-xl text-yellow-500">Single parts or bulk import</h2>
 				<p class=" text-base">
 					Upload CAD models of single parts and assemblies or import bulk data from your ERP system.
 				</p>
@@ -105,7 +105,7 @@
 				</figure>
 			</Card.Header>
 			<Card.Content>
-				<h2 class="card-title font-semibold text-xl  text-orange-500">Comprehensive analysis</h2>
+				<h2 class="card-title font-semibold text-xl  text-yellow-500">Comprehensive analysis</h2>
 				<p class=" text-base">
 					Quickly assess the suitability of your parts for AM. Identify the best AM process and
 					material for your application and compare results to total cost of ownership calculations.
@@ -122,7 +122,7 @@
 				</figure>
 			</Card.Header>
 			<Card.Content>
-				<h2 class="card-title font-semibold  text-xl text-orange-500">Privacy by design</h2>
+				<h2 class="card-title font-semibold  text-xl text-yellow-500">Privacy by design</h2>
 				<p class=" text-base">
 					SelectAM is built as a hybrid web application. Your sensititve data is processed locally
 					on your device and never leaves your network.

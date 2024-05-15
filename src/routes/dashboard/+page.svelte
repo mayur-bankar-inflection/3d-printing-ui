@@ -11,7 +11,7 @@
 			<img src="Estimation/savings.png" alt="page" class="mx-auto w-16" />
 		</figure>
 		<Card.Content>
-			<h1 class="card-title my-1 text-xl font-semibold text-orange-500">AM Saving Potential</h1>
+			<h1 class="card-title my-1 text-xl font-semibold text-yellow-500">AM Saving Potential</h1>
 			<p>Total potential saving through AM</p>
 			<h2 class="text-2xl font-bold">40,000</h2>
 			<p>6 years 76 days average parts lifecycle</p>
@@ -22,7 +22,7 @@
 			<img src="Estimation/chart.png" alt="page" class="mx-auto w-14" />
 		</figure>
 		<Card.Content>
-			<h1 class="card-title my-1 text-xl font-semibold text-orange-500">AM Buisness Cases</h1>
+			<h1 class="card-title my-1 text-xl font-semibold text-yellow-500">AM Buisness Cases</h1>
 			<p>High criteria score</p>
 			<h2 class="text-2xl font-bold">81</h2>
 			<p>29.51%</p>
@@ -33,7 +33,7 @@
 			<img src="Estimation/certify.png" alt="page" class="mx-auto w-16" />
 		</figure>
 		<Card.Content>
-			<h1 class="card-title my-1 text-xl font-semibold text-orange-500">AM Score</h1>
+			<h1 class="card-title my-1 text-xl font-semibold text-yellow-500">AM Score</h1>
 			<p>Score average</p>
 			<h2 class="text-2xl font-bold">65.67/100</h2>
 			<p>6 years 76 days average parts lifecycle</p>
@@ -44,7 +44,7 @@
 			<img src="Estimation/time.png" alt="page" class="mx-auto w-14" />
 		</figure>
 		<Card.Content>
-			<h1 class="card-title my-1 text-xl font-semibold text-orange-500">Shorter Lead Time</h1>
+			<h1 class="card-title my-1 text-xl font-semibold text-yellow-500">Shorter Lead Time</h1>
 			<p>Decreased lead time</p>
 			<h2 class="text-2xl font-bold">225</h2>
 			<p>85.12%</p>
@@ -55,7 +55,7 @@
 			<img src="Estimation/quality.png" alt="page" class="mx-auto w-16" />
 		</figure>
 		<Card.Content>
-			<h1 class="card-title my-1 text-xl font-semibold text-orange-500">Data Quality</h1>
+			<h1 class="card-title my-1 text-xl font-semibold text-yellow-500">Data Quality</h1>
 			<p>Validity of import data</p>
 			<h2 class="text-2xl font-bold">86.25%</h2>
 			<p>Data need to be checked</p>
@@ -66,7 +66,7 @@
 			<img src="Estimation/all.png" alt="page" class="mx-auto w-16" />
 		</figure>
 		<Card.Content>
-			<h1 class="card-title my-1 text-xl font-semibold text-orange-500">All Parts</h1>
+			<h1 class="card-title my-1 text-xl font-semibold text-yellow-500">All Parts</h1>
 			<p>Parts from models or import files</p>
 			<h2 class="text-2xl font-bold">311</h2>
 			<p>12 files have been imported</p>
