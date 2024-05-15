@@ -74,7 +74,7 @@
 	</Card.Root>
 </div>
 
-<div class="mx-4 my-8  overflow-scroll rounded-lg shadow-lg md:mx-12">
+<div class="my-8 mx-4 overflow-scroll rounded-lg shadow-lg md:mx-12">
 	<table class="w-full table-fixed">
 		<thead>
 			<tr class="bg-zinc-800">

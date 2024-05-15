@@ -1,5 +1,5 @@
 <script lang="ts">
-	import * as Select from '$lib/components/ui/select/index.js';
+	import * as Select from '$lib/Components/ui/select/index';
 	import { Button } from '$lib/Components/ui/button';
 
 	const technology = [
@@ -46,12 +46,12 @@
 </script>
 
 <div class="mx-auto my-5 w-3/4">
-	<div class="flex flex-col">
-		<div class="flex-grow">
+	<div class="flex items-center flex-col md:flex-row">
+		<div class="flex-grow text-center md:text-start">
 			<p class="text-xl font-bold">(Online Calculator)</p>
 			<p>1 model (1configuration)</p>
 		</div>
-		<div class="flex justify-end space-x-4">
+		<div class="flex justify-end space-x-4 my-3">
 			<Button>Support</Button>
 			<Button>Options</Button>
 		</div>
@@ -59,8 +59,8 @@
 
 	<div class="mt-5 w-full rounded-lg border-2 border-black">
 		<div class="border-b-2 border-black p-4 py-6 font-bold">Configuration 1, 1 model</div>
-		<div class="flex flex-col space-x-4 p-4 sm:flex-row">
-			<div class="flex w-full flex-col space-y-4 sm:w-2/4">
+		<div class="flex flex-col p-4">
+			<div class="flex w-2/3 mx-auto flex-col space-y-4">
 				<div
 					class="flex h-fit w-full flex-col rounded-md bg-slate-100 p-4 pb-1 sm:flex-row sm:space-x-10"
 				>
@@ -68,10 +68,13 @@
 						<!-- <p>All images</p> -->
 						<img src="Estimation/part.png" alt="" class="w-full sm:w-32" />
 					</div>
-					<div class=" w-full p-3 pb-1 sm:w-fit">
-						<p class="font-bold">Name</p>
-						<p>Diamensions</p>
-						<div class="flex w-full flex-row space-x-5">
+					<div class=" w-full p-3 pb-1">
+						<div class=" text-center md:text-start">
+							<p class="font-bold">Name</p>
+							<p>Diamensions</p>
+						</div>
+						
+						<div class="flex w-full flex-col md:flex-row">
 							<div>
 								<div class="mt-5 flex items-center justify-center">
 									<button
@@ -89,7 +92,7 @@
 									</button>
 								</div>
 							</div>
-							<div class="mt-1 w-full items-end justify-end pt-2">
+							<div class=" my-3 w-full flex flex-col items-center md:items-end">
 								<p class="text-end">Pricing</p>
 								<p class="text-end">EUR 48.32</p>
 								<p class="text-end font-bold">EUR 123.20</p>
@@ -108,8 +111,8 @@
 					<p class="mx-auto flex justify-center">Extensions allowed</p>
 				</div>
 			</div>
-			<div class="  m-2 w-full space-y-4 p-2 sm:w-2/4">
-				<div class=" mt-2">
+			<div class=" mx-auto w-2/3 my-4 space-y-3">
+				<div class="">
 					<Select.Root portal={null}>
 						<Select.Trigger class="w-full">
 							<Select.Value placeholder="Select a Technology" />
@@ -163,19 +166,20 @@
 						<Select.Input name="favoritetechnology" />
 					</Select.Root>
 				</div>
-				<Button class="mx-auto flex w-full ">Material wizard</Button>
 			</div>
+			<Button class="mx-auto w-30 md:w-1/2">Material wizard</Button>
+
 		</div>
 	</div>
 </div>
 
 <div class="my-6 flex flex-wrap items-center justify-center">
-	<p class="p-4 text-lg font-semibold">Your price incl.shipping: EUR 152.15</p>
-	<Button class="mx-4 border-2 bg-transparent text-black  hover:text-white"
+	<p class="text-lg font-semibold">Your price incl.shipping: EUR 152.15</p>
+	<Button class="mx-3 my-3 border-2 bg-transparent text-black  hover:text-white"
 		>Price Details and Options</Button
 	>
 	<Select.Root portal={null}>
-		<Select.Trigger class="ml-4 w-56">
+		<Select.Trigger class="mx-4 w-56">
 			<Select.Value placeholder="Delivery Country" />
 		</Select.Trigger>
 		<Select.Content>
