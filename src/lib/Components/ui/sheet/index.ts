@@ -38,7 +38,7 @@ export {
 };
 
 export const sheetVariants = tv({
-	base: "fixed z-50 gap-4 bg-green-500 p-6 shadow-lg",
+	base: "fixed z-50 gap-4  bg-zinc-950 p-6 shadow-lg",
 	variants: {
 		side: {
 			top: "inset-x-0 top-0 border-b",

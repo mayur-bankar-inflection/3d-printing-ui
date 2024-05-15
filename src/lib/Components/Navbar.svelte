@@ -1,10 +1,9 @@
 <script lang="ts">
 	import * as Sheet from '$lib/Components/ui/sheet';
-	import { Button } from '$lib/components/ui/button';
+	import Button from './ui/button/button.svelte';
 </script>
 
-<!-- <div class="h-5 w-full bg-red-500"></div> -->
-<nav class=" h-fit w-full bg-violet-500">
+<nav class=" h-fit w-full bg-zinc-800 py-4">
 	<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 		<div class="relative flex h-16 w-full items-center justify-between px-2">
 			<div class=" sm:hidden">
@@ -22,36 +21,41 @@
 						>
 					</Sheet.Trigger>
 					<Sheet.Content side="left" class="space-y-2">
-						<Button class="hover:bg-white"
+						<Button class=""
 							><img
-								src="acc.png"
+								src="/Navbar/acc.png"
 								alt="Account Icon"
 								class="mx-auto block h-8 w-8 rounded-md"
 							/></Button
 						>
 						<Button
-							href="#"
-							class="mx-auto block rounded-md px-3 py-2 text-center text-base font-medium text-white hover:bg-white hover:text-green-500"
+							href="/"
+							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+							>Home</Button
+						>
+						<Button
+							href="/dashboard"
+							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
 							>Dashboard</Button
 						>
-						<Button
-							href="#"
-							class="mx-auto block rounded-md px-3 py-2 text-center text-base font-medium text-white hover:bg-white hover:text-green-500"
+						<!-- <Button
+							href="/parts"
+							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
 							>Parts</Button
-						>
+						> -->
 						<Button
-							href="#"
-							class="mx-auto block rounded-md px-3 py-2 text-center text-base font-medium text-white hover:bg-white hover:text-green-500"
+							href="/estimation"
+							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
 							>Estimation</Button
 						>
-						<Button
+						<!-- <Button
 							href="#"
-							class="mx-auto block rounded-md px-3 py-2 text-center text-base font-medium text-white hover:bg-white hover:text-green-500"
+							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
 							>Setting</Button
-						>
+						> -->
 						<Button
-							href="#"
-							class="mx-auto block rounded-md px-3 py-2 text-center text-base font-medium text-white hover:bg-white hover:text-green-500"
+							href="/help"
+							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
 							>Help</Button
 						>
 					</Sheet.Content>
@@ -61,12 +65,31 @@
 				class="flex flex-1 items-center justify-center p-1 py-2 sm:items-stretch sm:justify-start"
 			>
 				<div class="hidden flex-shrink-0 items-center md:flex lg:flex lg:space-x-6">
-					<img src="logo.png" alt="" class="h-10 w-10" />
+					<img src="Navbar/logos.png" alt="" class="h-14 w-14" />
 					<button
-						class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
+						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+					>
+					<svg
+					class="h-8 w-8 mx-auto text-white"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke="currentColor"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+					/>
+				</svg>
+
+						<a href="/">Home</a>
+					</button>
+					<button
+						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 					>
 						<svg
-							class="mx-auto h-6 w-6 text-center"
+							class="mx-auto h-7 w-7 text-center"
 							width="20"
 							height="20"
 							viewBox="0 0 24 24"
@@ -81,13 +104,13 @@
 							<path d="M6.4 20a9 9 0 1 1 11.2 0Z" /></svg
 						>
 
-						<p>Dashboard</p>
+						<a href="/dashboard">Dashboard</a>
 					</button>
-					<button
-						class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
+					<!-- <button
+						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 					>
 						<svg
-							class="0 mx-auto h-6 w-6 text-center"
+							class="0 mx-auto h-7 w-7 text-center"
 							viewBox="0 0 24 24"
 							fill="none"
 							stroke="currentColor"
@@ -99,13 +122,13 @@
 							<path d="M22 12A10 10 0 0 0 12 2v10z" /></svg
 						>
 
-						<p>Parts</p>
-					</button>
+						<a href="/parts">Parts</a>
+					</button> -->
 					<button
-						class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
+						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 					>
 						<svg
-							class="mx-auto h-6 w-6 text-center"
+							class="mx-auto h-7 w-7 text-center"
 							width="24"
 							height="24"
 							viewBox="0 0 24 24"
@@ -120,17 +143,17 @@
 							<polyline points="14 7 21 7 21 14" /></svg
 						>
 
-						<p>Estimation</p>
+						<a href="/estimation">Estimation</a>
 					</button>
 				</div>
 			</div>
 
 			<div class=" hidden flex-shrink-0 flex-row items-center sm:flex md:flex lg:flex">
-				<button
-					class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
+				<!-- <button
+					class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 				>
 					<svg
-						class="mx-auto h-6 w-6 text-center"
+						class="mx-auto h-7 w-7 text-center"
 						width="24"
 						height="24"
 						viewBox="0 0 24 24"
@@ -146,12 +169,12 @@
 						/> <circle cx="12" cy="12" r="3" /></svg
 					>
 					<p>Setting</p>
-				</button>
+				</button> -->
 				<button
-					class="rounded-md px-3 py-2 text-sm font-medium text-white hover:bg-white hover:text-cyan-500"
+					class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 				>
 					<svg
-						class="mx-auto h-6 w-6 text-center"
+						class="mx-auto h-7 w-7 text-center"
 						width="24"
 						height="24"
 						viewBox="0 0 24 24"
@@ -165,10 +188,10 @@
 						<line x1="12" y1="17" x2="12" y2="17.01" />
 						<path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" /></svg
 					>
-					<p>Help</p>
+					<a href="/help">Help</a>
 				</button>
 			</div>
-			<div class="ml-3 sm:flex">
+			<div class="ml-6 sm:flex">
 				<div>
 					<button
 						type="button"
@@ -177,16 +200,11 @@
 						aria-expanded="false"
 						aria-haspopup="true"
 					>
-						<svg
-							class="h-12 w-12 text-white hover:text-cyan-900"
-							fill="none"
-							viewBox="0 0 24 24"
-							stroke="currentColor"
-						>
+						<svg class="h-14 w-14 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 							<path
 								stroke-linecap="round"
 								stroke-linejoin="round"
-								stroke-width="2"
+								stroke-width="1"
 								d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
 							/>
 						</svg>
@@ -196,4 +214,3 @@
 		</div>
 	</div>
 </nav>
-<!-- <div class="h-5 w-full bg-red-500"></div> -->
