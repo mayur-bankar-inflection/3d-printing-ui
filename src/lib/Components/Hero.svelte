@@ -1,5 +1,7 @@
-<script>
+<script lang="ts">
 	import Button from './ui/button/button.svelte';
+	import { Input } from '$lib/components/ui/input/index.js';
+	import { Label } from '$lib/components/ui/label/index.js';
 </script>
 
 <section class="relative flex h-[645px] flex-col justify-center px-4 text-left text-white lg:pl-52">
@@ -15,20 +17,28 @@
 	</div>
 	<!-- Sign-up form -->
 	<div class="absolute inset-0 z-50 mr-44 flex items-center justify-end">
-		<form class="max-w-lg rounded-xl bg-white  bg-opacity-60 px-12 py-10 shadow-md hidden xl:block">
+		<form class="hidden max-w-lg rounded-xl bg-white bg-opacity-60 px-12 py-10 shadow-md xl:block">
 			<h2 class="mb-4 text-3xl font-semibold text-zinc-800">Sign in</h2>
 			<div class="mb-4">
-				<label class="mb-2 block text-base font-semibold text-zinc-800" for="email"> Email </label>
+				<!-- <label class="mb-2 block text-base font-semibold text-zinc-800" for="email"> Email </label>
 				<input
 					class=" w-full appearance-none rounded border px-5 py-2 leading-tight text-gray-700 focus:outline-none"
 					id="email"
 					type="email"
 					placeholder="abc@gmail.com"
                     required
-				/>
+				/> -->
+				<div class="flex w-full max-w-sm flex-col gap-1.5">
+					<Label class=" block text-base font-semibold text-zinc-800" for="email">Email</Label>
+					<Input type="email" id="email" placeholder="email" />
+				</div>
 			</div>
 			<div class="mb-4">
-				<label class="mb-2 block text-base font-semibold text-zinc-800" for="password">
+				<div class="flex w-full max-w-sm flex-col gap-1.5">
+					<Label class=" block text-base font-semibold text-zinc-800" for="password">Password</Label>
+					<Input type="password" id="password" placeholder="email" />
+				</div>
+				<!-- <label class="mb-2 block text-base font-semibold text-zinc-800" for="password">
 					Password
 				</label>
 				<input
@@ -36,23 +46,27 @@
 					id="password"
 					type="password"
 					placeholder="Enter your password"
-				/>
+				/> -->
 			</div>
 			<!-- Add more form fields as needed -->
 			<div class="flex w-full items-center justify-center">
-				<Button
-					class=" w-full max-w-xs rounded  px-4 py-2 font-bold text-white hover:bg-black"
-				>
+				<Button class=" w-full max-w-xs rounded  px-4 py-2 font-bold text-white hover:bg-black">
 					login
 				</Button>
 			</div>
-            <div class="flex items-center justify-center mt-4">
-                <button class="px-8 py-2 max-w-xs bg-white hover:bg-slate-300 border flex gap-2 rounded-lg text-zinc-800  ">
-                    <img class="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo">
-                    <span class=" font-semibold">Login with Google</span>
-                </button>
-            </div>
-			
+			<div class="mt-4 flex items-center justify-center">
+				<button
+					class="flex max-w-xs gap-2 rounded-lg border bg-white px-8 py-2 text-zinc-800 hover:bg-slate-300"
+				>
+					<img
+						class="h-6 w-6"
+						src="https://www.svgrepo.com/show/475656/google-color.svg"
+						loading="lazy"
+						alt="google logo"
+					/>
+					<span class=" font-semibold">Login with Google</span>
+				</button>
+			</div>
 		</form>
 	</div>
 	<!-- End of sign-up form -->
