@@ -15,7 +15,7 @@
 	</div>
 	
 			<!-- Your video content -->
-		<div class="video-content font-Onest z-10 space-y-2 lg:px-8 flex flex-col justify-center items-center text-center lg:items-start">
+		<div class="video-content font-Onest z-10 px-5 space-y-2 lg:px-8 flex flex-col md:text-center justify-center  lg:items-start">
 			<h1 class="animate__animated animate__fadeInUp text-4xl font-semibold lg:text-6xl  lg:px-0">
 				Enhance Manufacturing
 			</h1>
@@ -27,9 +27,9 @@
 			</h3>
 		</div>
 
-		<!-- Sign-up form for large screen and above -->
+		<!-- Sign-up form for small and large screen -->
 	<div class="lg:absolute inset-0 z-50 lg:px-10 my-5 lg:my-0 flex items-center justify-center lg:justify-end">
-		<form class="rounded-xl lg:w-1/3 bg-white  bg-opacity-60 px-10 py-5 shadow-md ">
+		<form class="rounded-xl lg:w-1/3 bg-white bg-opacity-60 px-10 py-2 lg:py-5 shadow-md ">
 			<h2 class="mb-4 text-4xl text-center font-semibold text-zinc-800">Sign in</h2>
 			<div class="mb-4">
 				<label class="mb-2 block text-lg text-base font-semibold text-zinc-800" for="email"> Email </label>

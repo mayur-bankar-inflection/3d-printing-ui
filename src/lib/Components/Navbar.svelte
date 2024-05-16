@@ -1,6 +1,11 @@
 <script lang="ts">
 	import * as Sheet from '$lib/Components/ui/sheet';
 	import Button from './ui/button/button.svelte';
+
+	let clickedOption = false;
+	function onClickOption() {
+		clickedOption = !clickedOption;
+	}
 </script>
 
 <nav class=" h-fit w-full bg-zinc-800 py-4">
@@ -28,36 +33,52 @@
 								class="mx-auto block h-8 w-8 rounded-md"
 							/></Button
 						>
-						<Button
-							href="/"
-							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
-							>Home</Button
-						>
-						<Button
-							href="/dashboard"
-							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
-							>Dashboard</Button
-						>
+						<Sheet.Close asChild let:builder>
+							<Button
+								href="/"
+								builders={[builder]}
+								class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+								>Home</Button
+							>
+						</Sheet.Close>
+
+						<Sheet.Close asChild let:builder>
+							<Button
+								builders={[builder]}
+								href="/dashboard"
+								class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+								>Dashboard</Button
+							>
+						</Sheet.Close>
+
 						<!-- <Button
 							href="/parts"
 							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
 							>Parts</Button
 						> -->
-						<Button
-							href="/estimation"
-							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
-							>Estimation</Button
-						>
+						<Sheet.Close asChild let:builder>
+							<Button
+								builders={[builder]}
+								href="/estimation"
+								class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+								>Estimation</Button
+							>
+						</Sheet.Close>
+
 						<!-- <Button
 							href="#"
 							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
 							>Setting</Button
 						> -->
-						<Button
-							href="/help"
-							class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
-							>Help</Button
-						>
+
+						<Sheet.Close asChild let:builder>
+							<Button
+								builders={[builder]}
+								href="/help"
+								class=" mx-auto block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+								>Help</Button
+							>
+						</Sheet.Close>
 					</Sheet.Content>
 				</Sheet.Root>
 			</div>
@@ -69,19 +90,19 @@
 					<button
 						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 					>
-					<svg
-					class="h-8 w-8 mx-auto text-white"
-					fill="none"
-					viewBox="0 0 24 24"
-					stroke="currentColor"
-				>
-					<path
-						stroke-linecap="round"
-						stroke-linejoin="round"
-						stroke-width="2"
-						d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-					/>
-				</svg>
+						<svg
+							class="mx-auto h-8 w-8 text-white"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke="currentColor"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								stroke-width="2"
+								d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+							/>
+						</svg>
 
 						<a href="/">Home</a>
 					</button>
