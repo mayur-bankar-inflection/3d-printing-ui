@@ -11,66 +11,71 @@
 <nav class=" h-fit w-full bg-zinc-800 py-4">
 	<div class="mx-auto max-w-7xl sm:px-6 lg:px-8">
 		<div class="relative flex h-16 w-full items-center justify-between px-2">
-			<div class=" sm:hidden">
-				<Sheet.Root>
-					<Sheet.Trigger asChild let:builder>
-						<Button builders={[builder]} variant="outline"
-							><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-								<path
-									stroke-linecap="round"
-									stroke-linejoin="round"
-									stroke-width="2"
-									d="M4 6h16M4 12h16m-7 6h7"
-								></path>
-							</svg></Button
-						>
-					</Sheet.Trigger>
-					<Sheet.Content side="left" class="space-y-2">
-						<Button class=""
-							><img
-								src="/Navbar/acc.png"
-								alt="Account Icon"
-								class="mx-auto block h-8 w-8 rounded-md"
-							/></Button
-						>
-						<Sheet.Close asChild let:builder>
-							<Button
-								href="/"
-								builders={[builder]}
-								class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-yellow-500 hover:text-zinc-950 "
-								>Home</Button
-							>
-						</Sheet.Close>
+			<!-- Drawer & logo for mobile view -->
 
-						<Sheet.Close asChild let:builder>
-							<Button
-								builders={[builder]}
-								href="/dashboard"
-								class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-yellow-500 hover:text-zinc-950 "
-								>Dashboard</Button
+			<div class=" flex w-full items-center sm:hidden">
+				<div class="w-1/2">
+					<Sheet.Root>
+						<Sheet.Trigger asChild let:builder>
+							<Button builders={[builder]} variant="outline"
+								><svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M4 6h16M4 12h16m-7 6h7"
+									></path>
+								</svg></Button
 							>
-						</Sheet.Close>
-
-						<Sheet.Close asChild let:builder>
-							<Button
-								builders={[builder]}
-								href="/estimation"
-								class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-yellow-500 hover:text-zinc-950 "
-								>Estimation</Button
+						</Sheet.Trigger>
+						<Sheet.Content side="left" class="space-y-2">
+							<Button class=""
+								><img
+									src="/Navbar/acc.png"
+									alt="Account Icon"
+									class="mx-auto block h-8 w-8 rounded-md"
+								/></Button
 							>
-						</Sheet.Close>
-
-						<Sheet.Close asChild let:builder>
-							<Button
-								builders={[builder]}
-								href="/help"
-								class=" mx-auto block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-yellow-500 hover:text-zinc-950 "
-								>Help</Button
-							>
-						</Sheet.Close>
-					</Sheet.Content>
-				</Sheet.Root>
+							<Sheet.Close asChild let:builder>
+								<Button
+									href="/"
+									builders={[builder]}
+									class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+									>Home</Button
+								>
+							</Sheet.Close>
+							<Sheet.Close asChild let:builder>
+								<Button
+									builders={[builder]}
+									href="/dashboard"
+									class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+									>Dashboard</Button
+								>
+							</Sheet.Close>
+							<Sheet.Close asChild let:builder>
+								<Button
+									builders={[builder]}
+									href="/estimation"
+									class=" mx-auto   block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+									>Estimation</Button
+								>
+							</Sheet.Close>
+							<Sheet.Close asChild let:builder>
+								<Button
+									builders={[builder]}
+									href="/help"
+									class=" mx-auto block rounded-md px-3 py-2 text-center text-base font-medium hover:bg-white hover:text-zinc-950 "
+									>Help</Button
+								>
+							</Sheet.Close>
+						</Sheet.Content>
+					</Sheet.Root>
+				</div>
+				<div class="-mx-14 flex justify-center">
+					<img src="apexlogo.svg" alt="" class="h-36 w-36" />
+				</div>
 			</div>
+			<!-- end of drawer -->
 			<div
 				class="flex flex-1 items-center justify-center p-1 py-2 sm:items-stretch sm:justify-start"
 			>
@@ -170,7 +175,7 @@
 					</button>
 				</a>
 			</div>
-			<div class="ml-6 sm:flex">
+			<div class="ml-6 hidden sm:flex">
 				<div>
 					<button
 						type="button"
