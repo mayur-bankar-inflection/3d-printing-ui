@@ -66,8 +66,8 @@
 			>
 				<div class="hidden flex-shrink-0 items-center md:flex lg:flex lg:space-x-6">
 					<img src="Navbar/logos.png" alt="" class="h-14 w-14" />
-					<button
-						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+					<Button
+						class="h-fit w-fit flex flex-col rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 					>
 					<svg
 					class="h-8 w-8 mx-auto text-white"
@@ -84,9 +84,9 @@
 				</svg>
 
 						<a href="/">Home</a>
-					</button>
-					<button
-						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+					</Button>
+					<Button
+						class="flex flex-col h-fit w-fit rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 					>
 						<svg
 							class="mx-auto h-7 w-7 text-center"
@@ -105,7 +105,7 @@
 						>
 
 						<a href="/dashboard">Dashboard</a>
-					</button>
+					</Button>
 					<!-- <button
 						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 					>
@@ -124,8 +124,8 @@
 
 						<a href="/parts">Parts</a>
 					</button> -->
-					<button
-						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+					<Button
+						class="flex flex-col h-fit w-fit rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 					>
 						<svg
 							class="mx-auto h-7 w-7 text-center"
@@ -144,7 +144,7 @@
 						>
 
 						<a href="/estimation">Estimation</a>
-					</button>
+					</Button>
 				</div>
 			</div>
 
@@ -170,8 +170,8 @@
 					>
 					<p>Setting</p>
 				</button> -->
-				<button
-					class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
+				<Button
+					class="h-fit w-fit flex flex-col rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 				>
 					<svg
 						class="mx-auto h-7 w-7 text-center"
@@ -189,7 +189,7 @@
 						<path d="M12 13.5a1.5 1.5 0 0 1 1 -1.5a2.6 2.6 0 1 0 -3 -4" /></svg
 					>
 					<a href="/help">Help</a>
-				</button>
+				</Button>
 			</div>
 			<div class="ml-6 sm:flex">
 				<div>

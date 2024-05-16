@@ -46,12 +46,22 @@
 </script>
 
 <div class="mx-auto my-5 w-3/4">
-	<div class="flex flex-col">
+	<!-- <div class="flex flex-col space-y-2 sm:space-y-0 bg-green-400">
 		<div class="flex-grow">
 			<p class="text-xl font-bold">(Online Calculator)</p>
 			<p>1 model (1configuration)</p>
 		</div>
 		<div class="flex justify-end space-x-4">
+			<Button>Support</Button>
+			<Button>Options</Button>
+		</div>
+	</div> -->
+	<div class="flex flex-col items-center md:flex-row w-full ">
+		<div class="flex-grow text-center md:text-start">
+			<p class="text-xl font-bold">(Online Calculator)</p>
+			<p>1 model (1configuration)</p>
+		</div>
+		<div class="my-6 flex justify-end space-x-16">
 			<Button>Support</Button>
 			<Button>Options</Button>
 		</div>
@@ -65,7 +75,7 @@
 					class="flex h-fit w-full flex-col rounded-md bg-slate-100 p-4 pb-1 sm:flex-row sm:space-x-10"
 				>
 					<div class=" w-full sm:w-fit">
-						<!-- <p>All images</p> -->
+						
 						<img src="Estimation/part.png" alt="" class="w-full sm:w-32" />
 					</div>
 					<div class=" w-full p-3 pb-1 sm:w-fit">
@@ -171,7 +181,7 @@
 
 <div class="my-6 flex flex-wrap items-center justify-center">
 	<p class="p-4 text-lg font-semibold">Your price incl.shipping: EUR 152.15</p>
-	<Button class="mx-4 border-2  text-black  hover:text-white">Price Details and Options</Button>
+	<Button class="mx-4 my-4 border-2 hover:text-white">Price Details and Options</Button>
 	<Select.Root portal={null}>
 		<Select.Trigger class="ml-4 w-56">
 			<Select.Value placeholder="Delivery Country" />
@@ -187,3 +197,25 @@
 		<Select.Input name="favoritecountry" />
 	</Select.Root>
 </div>
+<!-- <div class="my-6 flex flex-wrap items-center justify-center">
+	<p class="text-lg font-semibold">Your price incl.shipping: EUR 152.15</p>
+	<Button class="mx-3 my-3 border-2 bg-transparent text-black  hover:text-white"
+		>Price Details and Options</Button
+	>
+	<Select.Root portal={null}>
+		<Select.Trigger class="mx-4 w-56">
+			<Select.Value placeholder="Delivery Country" />
+		</Select.Trigger>
+		<Select.Content>
+			<Select.Group>
+				<Select.Label>Country</Select.Label>
+				{#each country as country}
+					<Select.Item value={country.value} label={country.label}>{country.label}</Select.Item>
+				{/each}
+			</Select.Group>
+		</Select.Content>
+		<Select.Input name="favoritecountry" />
+	</Select.Root>
+</div> -->
+
+

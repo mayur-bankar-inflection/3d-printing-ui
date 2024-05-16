@@ -63,7 +63,7 @@
 			<div class="relative">
 				<div class="flex w-full max-w-sm flex-col gap-1.5">
 					<Label for="textarea" class=" text-lg leading-7 text-gray-900">Message</Label>
-					<Textarea placeholder="Type your message here." class="w-full"/>
+					<Textarea placeholder="Type your message here." />
 				</div>
 				<!-- <label for="message" class="py-4 text-lg leading-7 text-gray-900">Message</label>
 				<textarea

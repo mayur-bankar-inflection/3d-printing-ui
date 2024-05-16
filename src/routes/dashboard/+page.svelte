@@ -1,6 +1,59 @@
 <script type="ts">
 	import { Button } from '$lib/Components/ui/button';
 	import * as Card from '$lib/components/ui/card';
+	import * as Table from '$lib/components/ui/table';
+	// import { AspectRatio } from '$lib/components/ui/aspect-ratio';
+
+	const arrayOfObjects = [
+		{
+			key1: 'value1',
+			key2: 'value2',
+			key3: 'value3',
+			key4: 'value4',
+			key5: 'value5',
+			key6: 'value6'
+		},
+		{
+			key1: 'value1',
+			key2: 'value2',
+			key3: 'value3',
+			key4: 'value4',
+			key5: 'value5',
+			key6: 'value6'
+		},
+		{
+			key1: 'value1',
+			key2: 'value2',
+			key3: 'value3',
+			key4: 'value4',
+			key5: 'value5',
+			key6: 'value6'
+		},
+		{
+			key1: 'value1',
+			key2: 'value2',
+			key3: 'value3',
+			key4: 'value4',
+			key5: 'value5',
+			key6: 'value6'
+		},
+		{
+			key1: 'value1',
+			key2: 'value2',
+			key3: 'value3',
+			key4: 'value4',
+			key5: 'value5',
+			key6: 'value6'
+		},
+		{
+			key1: 'value1',
+			key2: 'value2',
+			key3: 'value3',
+			key4: 'value4',
+			key5: 'value5',
+			key6: 'value6'
+		}
+	];
 </script>
 
 <div class="my-8 text-center text-xl font-bold text-zinc-800 lg:mt-16 lg:text-2xl">DASHBOARD</div>
@@ -75,7 +128,7 @@
 </div>
 
 <div class="mx-4 my-8 overflow-hidden rounded-lg shadow-lg md:mx-12">
-	<table class="w-full table-fixed">
+	<!-- <table class="w-full table-fixed">
 		<thead>
 			<tr class="bg-zinc-800">
 				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Name</th>
@@ -122,5 +175,49 @@
 				<td class="border-b border-gray-200 px-6 py-4"><Button>Order</Button></td>
 			</tr>
 		</tbody>
-	</table>
+	</table> -->
+	<div class="flex flex-wrap">
+		<div class="w-full p-4 ">
+			<div class="">
+				<Table.Root class="p-1 ">
+					<Table.Header class="border-b-2 border-slate-400 bg-zinc-800 text-white	">
+						<Table.Row>
+							<Table.Head>Sr No.</Table.Head>
+							<Table.Head>Column</Table.Head>
+							<Table.Head>Column</Table.Head>  
+							<Table.Head>Column</Table.Head>
+							<Table.Head>Column</Table.Head>
+							<Table.Head>Column</Table.Head>
+							<Table.Head>Column</Table.Head>
+							<Table.Head>Column</Table.Head>
+						</Table.Row>
+					</Table.Header>
+					<Table.Body>
+						{#each arrayOfObjects as a, index}
+							<Table.Row class=" border-b border-slate-400">
+								<Table.Cell class="font-medium">{index + 1}</Table.Cell>
+								<Table.Cell>{a.key1}</Table.Cell>
+								<Table.Cell>{a.key2}</Table.Cell>
+								<Table.Cell class="text-left">{a.key3}</Table.Cell>
+								<Table.Cell>{a.key4}</Table.Cell>
+								<Table.Cell>{a.key5}</Table.Cell>
+								<Table.Cell>{a.key6}</Table.Cell>
+								<Table.Cell class="text-right">
+									<Button variant="destructive">Button</Button>
+								</Table.Cell>
+							</Table.Row>
+						{/each}
+					</Table.Body>
+					<Table.Caption class="p-2">List of rows and columns.</Table.Caption>
+				</Table.Root>
+			</div>
+		</div>
+		<!-- <div class="w-full p-4 md:w-1/2 lg:w-1/2 xl:w-1/2">
+			<div class="bg-gray-200 p-4">
+				<AspectRatio ratio={16 / 9} class="bg-muted">
+					<img src="..." alt="..." class="rounded-md object-cover" />
+				</AspectRatio>
+			</div>
+		</div> -->
+	</div>
 </div>
