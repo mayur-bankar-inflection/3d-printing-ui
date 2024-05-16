@@ -45,10 +45,6 @@
 	};
 </script>
 
-<marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="100" loop="3"
-	>This text moves to the left with custom speed and loops three times</marquee
->
-
 <div class="mx-auto my-5 w-3/4">
 	<!-- <div class="flex flex-row">
 		<div>
@@ -84,18 +80,16 @@
             <button class="bg-white border border-gray-400 px-4 py-2 rounded-lg">Outline</button>
         </div>
     </div> -->
-	<div class="mt-5 w-full rounded-lg border border-black">
+	<div class="mt-5 rounded-lg border border-black w-full">
 		<div class="border border-black p-4 py-6 font-bold">Configuration 1, 1 model</div>
-		<div class="flex flex-col space-x-4 p-4 sm:flex-row">
-			<div class="flex w-full flex-col space-y-4 sm:w-2/4">
-				<div
-					class="flex h-fit w-full flex-col rounded-md bg-slate-200 p-4 pb-1 sm:flex-row sm:space-x-10"
-				>
-					<div class=" w-full bg-yellow-200 sm:w-fit">
-						<img src="Items/arrow.png" alt="" class="w-full sm:w-32" />
+		<div class="flex sm:flex-row space-x-4 p-4 flex-col">
+			<div class="sm:w-2/4 space-y-4 w-full flex flex-col ">
+				<div class="flex h-fit w-full sm:flex-row flex-col sm:space-x-10 rounded-md bg-slate-200 p-4 pb-1">
+					<div class=" sm:w-fit w-full bg-yellow-200">
+						<img src="Items/arrow.png" alt="" class="sm:w-32 w-full" />
 						<p>All images</p>
 					</div>
-					<div class=" w-full bg-red-200 p-3 pb-1 sm:w-fit">
+					<div class=" sm:w-fit w-full bg-red-200 p-3 pb-1">
 						<p class="font-bold">Name</p>
 						<p>Diamensions</p>
 						<div class="flex w-full flex-row space-x-5">
@@ -125,9 +119,9 @@
 					</div>
 				</div>
 				<div
-					class="h-fit w-full space-y-5 rounded-md border-2 border-dashed border-slate-400 bg-slate-200 p-4"
+					class="h-fit  w-full space-y-5 rounded-md border-2 border-dashed border-slate-400 bg-slate-200 p-4"
 				>
-					<div class="lg:sapce-x-20 flex flex-col sm:flex-row sm:space-x-5 md:space-x-10">
+					<div class="flex sm:flex-row flex-col sm:space-x-5 md:space-x-10 lg:sapce-x-20">
 						<Button variant="ghost">Drag file here</Button>
 						<p class="mx-auto mt-2 flex justify-center">OR</p>
 						<Button variant="outline" class="outline-blue-400">Select files</Button>
@@ -136,7 +130,7 @@
 				</div>
 			</div>
 
-			<div class="m-2 mx-auto w-full space-y-4 p-2 sm:w-2/4">
+			<div class="mx-auto sm:w-2/4 space-y-4  w-full p-2 m-2">
 				<div class=" mt-2">
 					<Select.Root portal={null}>
 						<Select.Trigger class="w-full">
@@ -196,16 +190,16 @@
 		</div>
 	</div>
 </div>
-<div class="mx-auto my-auto flex h-fit w-full flex-col bg-slate-400 px-4 py-10 sm:flex-row">
-	<div class="mx-auto flex w-6/12 flex-col justify-end space-y-2 sm:flex-row">
+<div class="mx-auto my-auto flex h-fit w-full sm:flex-row bg-slate-400 px-4 py-10 flex-col">
+	<div class="mx-auto flex w-6/12 justify-end sm:flex-row flex-col space-y-2">
 		<p class="font-bold">Your estimatimate price incl. shipping: EUR 132.20</p>
-		<Button variant="outline" class="ml-1 rounded-sm border px-8 py-1 text-cyan-600 sm:ml-5"
+		<Button variant="outline" class="sm:ml-5 ml-1 rounded-sm border px-8 py-1 text-cyan-600"
 			>Price Details and Options</Button
 		>
 	</div>
-	<div class="mx-auto ml-1 mt-2 w-full sm:w-6/12 sm:pl-32">
+	<div class="ml-1 sm:w-6/12 sm:pl-32 w-full mx-auto mt-2">
 		<Select.Root portal={null}>
-			<Select.Trigger class="w-full sm:w-3/5">
+			<Select.Trigger class="sm:w-3/5 w-full">
 				<Select.Value placeholder="Delivery Country" />
 			</Select.Trigger>
 			<Select.Content>
