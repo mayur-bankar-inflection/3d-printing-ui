@@ -1,10 +1,41 @@
 <script type="ts">
 	import { Button } from '$lib/Components/ui/button';
 	import * as Card from '$lib/components/ui/card';
+	import * as Table from '$lib/components/ui/table';
+	// import { AspectRatio } from '$lib/components/ui/aspect-ratio';
+	const arrayOfObjects = [
+		{
+			key1: 'Super Gear',
+			key2: 'Nylon PA',
+			key3: '...',
+			key4: '$86.32',
+			key5: '-86.32'
+		},
+		{
+			key1: 'Super Gear',
+			key2: 'Nylon PA',
+			key3: '...',
+			key4: '$86.32',
+			key5: '-86.32'
+		},
+		{
+			key1: 'Super Gear',
+			key2: 'Nylon PA',
+			key3: '...',
+			key4: '$86.32',
+			key5: '-86.32'
+		},
+		{
+			key1: 'Super Gear',
+			key2: 'Nylon PA',
+			key3: '...',
+			key4: '$86.32',
+			key5: '-86.32'
+		}
+	];
 </script>
 
 <div class="my-8 text-center text-xl font-bold text-zinc-800 lg:mt-16 lg:text-2xl">DASHBOARD</div>
-
 <div class="mt-3 flex flex-wrap justify-center">
 	<Card.Root class="  m-4 flex w-[450px] shadow-xl ">
 		<figure class=" rounded-sm p-3">
@@ -73,54 +104,37 @@
 		</Card.Content>
 	</Card.Root>
 </div>
-
 <div class="mx-4 my-8 overflow-hidden rounded-lg shadow-lg md:mx-12">
-	<table class="w-full table-fixed">
-		<thead>
-			<tr class="bg-zinc-800">
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Name</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">AM Material</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Model</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Average Price</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white">Savings</th>
-				<th class="w-1/4 px-6 py-4 text-left font-semibold uppercase text-white"></th>
-			</tr>
-		</thead>
-		<tbody class="bg-white">
-			<tr>
-				<td class="border-b border-gray-200 px-6 py-4">Spur Gear</td>
-				<td class="truncate border-b border-gray-200 px-6 py-4">Nylon PA</td>
-				<td class="border-b border-gray-200 px-6 py-4">...</td>
-				<td class="border-b border-gray-200 px-6 py-4">$86.22</td>
-				<td class="border-b border-gray-200 px-6 py-4">-86.22</td>
-				<td class="border-b border-gray-200 px-6 py-4"><Button>Order</Button></td>
-			</tr>
-			<tr>
-				<td class="border-b border-gray-200 px-6 py-4">Spur Gear</td>
-				<td class="truncate border-b border-gray-200 px-6 py-4">Nylon PA</td>
-				<td class="border-b border-gray-200 px-6 py-4">...</td>
-				<td class="border-b border-gray-200 px-6 py-4">$66.22</td>
-				<td class="border-b border-gray-200 px-6 py-4">+86.22</td>
-				<td class="border-b border-gray-200 px-6 py-4"><Button>Order</Button></td>
-			</tr>
-			<tr>
-				<td class="border-b border-gray-200 px-6 py-4">Spur Gear</td>
-				<td class="truncate border-b border-gray-200 px-6 py-4">Nylon PA</td>
-				<td class="border-b border-gray-200 px-6 py-4">...</td>
-				<td class="border-b border-gray-200 px-6 py-4">$54.22</td>
-				<td class="border-b border-gray-200 px-6 py-4">-86.22</td>
-
-				<td class="border-b border-gray-200 px-6 py-4"><Button>Order</Button></td>
-			</tr>
-			<tr>
-				<td class="border-b border-gray-200 px-6 py-4">Spur Gear</td>
-				<td class="truncate border-b border-gray-200 px-6 py-4">Nylon PA</td>
-				<td class="border-b border-gray-200 px-6 py-4">...</td>
-				<td class="border-b border-gray-200 px-6 py-4">$72.22</td>
-				<td class="border-b border-gray-200 px-6 py-4">+86.22</td>
-
-				<td class="border-b border-gray-200 px-6 py-4"><Button>Order</Button></td>
-			</tr>
-		</tbody>
-	</table>
+	<div class="flex flex-wrap">
+		<div class="w-full">
+			<div class="">
+				<Table.Root class="">
+					<Table.Header class="border-b-2  bg-gray-200 text-base font-semibold    ">
+						<Table.Row>
+							<Table.Head>Name</Table.Head>
+							<Table.Head>AM Material</Table.Head>
+							<Table.Head>Model</Table.Head>
+							<Table.Head>Average Price</Table.Head>
+							<Table.Head>Savings</Table.Head>
+							<Table.Head></Table.Head>
+						</Table.Row>
+					</Table.Header>
+					<Table.Body>
+						{#each arrayOfObjects as a, index}
+							<Table.Row class=" border-b text-base ">
+								<Table.Cell>{a.key1}</Table.Cell>
+								<Table.Cell>{a.key2}</Table.Cell>
+								<Table.Cell class="">{a.key3}</Table.Cell>
+								<Table.Cell>{a.key4}</Table.Cell>
+								<Table.Cell>{a.key5}</Table.Cell>
+								<Table.Cell class="text-center">
+									<Button>Button</Button>
+								</Table.Cell>
+							</Table.Row>
+						{/each}
+					</Table.Body>
+				</Table.Root>
+			</div>
+		</div>
+	</div>
 </div>

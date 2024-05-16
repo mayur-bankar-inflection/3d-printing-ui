@@ -3,10 +3,10 @@
 	import Button from './ui/button/button.svelte';
 </script>
 
-<div class="mt-8 text-center text-2xl font-bold text-zinc-800 lg:mt-16 lg:text-3xl">
+<div class="mt-8 text-center text-xl font-bold text-zinc-800 md:text-2xl lg:mt-16 lg:text-3xl">
 	ADDITIVE MANUFACTURING
 </div>
-<p class=" mx-auto mt-4 w-4/5 text-justify text-lg leading-loose text-gray-700 lg:mt-8 lg:text-xl">
+<p class=" mx-auto mt-4 w-4/5 text-justify text-lg leading-tight text-gray-700 lg:mt-8 lg:text-xl">
 	Incorporating additive manufacturing (AM) into your production process offers a transformative
 	approach to manufacturing. Unlike traditional subtractive methods, which involve cutting away
 	material to create a final product, AM builds objects layer by layer from digital designs. This
@@ -75,21 +75,21 @@
 
 <!-- Highlights section -->
 <div class="my-16">
-	<div class="my-8 text-center font-bold text-2xl font-yellow lg:mt-16 lg:text-3xl">
-		HEIGHLIGHTS
-	</div>
+	<div class="my-8 text-center text-xl font-bold md:text-2xl lg:mt-16 lg:text-3xl">HEIGHLIGHTS</div>
 
-	<div class="mt-3 flex flex-wrap md:justify-center">
+	<div class="mx-6 my-3 flex flex-wrap md:justify-center">
 		<Card.Root
 			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
-				<figure class="  bg-zinc-800 p-10 rounded-xl">
-					<img src="/Dashboard/page.png" alt="page" class="w-36 mx-auto" />
+				<figure class="  rounded-xl bg-zinc-800 p-10">
+					<img src="/Dashboard/page.png" alt="page" class="mx-auto w-36" />
 				</figure>
 			</Card.Header>
 			<Card.Content>
-				<h2 class="card-title font-semibold text-xl text-yellow-500">Single parts or bulk import</h2>
+				<h2 class="card-title text-xl font-semibold text-yellow-500">
+					Single parts or bulk import
+				</h2>
 				<p class=" text-base">
 					Upload CAD models of single parts and assemblies or import bulk data from your ERP system.
 				</p>
@@ -100,12 +100,12 @@
 			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
-				<figure class=" bg-zinc-800 p-10 rounded-xl">
-					<img src="/Dashboard/refine1.png" alt="refine" class="w-36 mx-auto" />
+				<figure class=" rounded-xl bg-zinc-800 p-10">
+					<img src="/Dashboard/refine1.png" alt="refine" class="mx-auto w-36" />
 				</figure>
 			</Card.Header>
 			<Card.Content>
-				<h2 class="card-title font-semibold text-xl  text-yellow-500">Comprehensive analysis</h2>
+				<h2 class="card-title text-xl font-semibold text-yellow-500">Comprehensive analysis</h2>
 				<p class=" text-base">
 					Quickly assess the suitability of your parts for AM. Identify the best AM process and
 					material for your application and compare results to total cost of ownership calculations.
@@ -117,12 +117,12 @@
 			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
-				<figure class=" bg-zinc-800 p-10 rounded-xl">
-					<img src="/Dashboard/lock.png" alt="lock" class="w-36 mx-auto" />
+				<figure class=" rounded-xl bg-zinc-800 p-10">
+					<img src="/Dashboard/lock.png" alt="lock" class="mx-auto w-36" />
 				</figure>
 			</Card.Header>
 			<Card.Content>
-				<h2 class="card-title font-semibold  text-xl text-yellow-500">Privacy by design</h2>
+				<h2 class="card-title text-xl font-semibold text-yellow-500">Privacy by design</h2>
 				<p class=" text-base">
 					SelectAM is built as a hybrid web application. Your sensititve data is processed locally
 					on your device and never leaves your network.

@@ -1,5 +1,5 @@
 <footer class="flex flex-col justify-center space-y-6 bg-zinc-800 py-8">
-	<nav class="flex flex-wrap justify-center gap-8  font-medium text-white">
+	<nav class="flex flex-wrap justify-center gap-8 font-medium text-white">
 		<a class=" hover:text-yellow-500" href="#">Dashboard</a>
 		<a class=" hover:text-yellow-500" href="/parts">Parts</a>
 		<a class=" hover:text-yellow-500" href="/estimation">Estimation</a>
@@ -19,7 +19,5 @@
 			<img src="https://img.icons8.com/fluent/30/000000/twitter.png" />
 		</a>
 	</div>
-	<p class="text-center font-medium text-white">
-		&copy; 2024 Company Ltd. All rights reserved.
-	</p>
+	<p class="text-center font-medium text-white">&copy; 2024 Company Ltd. All rights reserved.</p>
 </footer>
