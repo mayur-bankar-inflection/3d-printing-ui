@@ -6,52 +6,32 @@
 
 	const arrayOfObjects = [
 		{
-			key1: 'value1',
-			key2: 'value2',
-			key3: 'value3',
-			key4: 'value4',
-			key5: 'value5',
-			key6: 'value6'
+			key1: 'Super Gear',
+			key2: 'Nylon PA',
+			key3: '...',
+			key4: '$86.32',
+			key5: '-86.32'
 		},
 		{
-			key1: 'value1',
-			key2: 'value2',
-			key3: 'value3',
-			key4: 'value4',
-			key5: 'value5',
-			key6: 'value6'
+			key1: 'Super Gear',
+			key2: 'Nylon PA',
+			key3: '...',
+			key4: '$86.32',
+			key5: '-86.32'
 		},
 		{
-			key1: 'value1',
-			key2: 'value2',
-			key3: 'value3',
-			key4: 'value4',
-			key5: 'value5',
-			key6: 'value6'
+			key1: 'Super Gear',
+			key2: 'Nylon PA',
+			key3: '...',
+			key4: '$86.32',
+			key5: '-86.32'
 		},
 		{
-			key1: 'value1',
-			key2: 'value2',
-			key3: 'value3',
-			key4: 'value4',
-			key5: 'value5',
-			key6: 'value6'
-		},
-		{
-			key1: 'value1',
-			key2: 'value2',
-			key3: 'value3',
-			key4: 'value4',
-			key5: 'value5',
-			key6: 'value6'
-		},
-		{
-			key1: 'value1',
-			key2: 'value2',
-			key3: 'value3',
-			key4: 'value4',
-			key5: 'value5',
-			key6: 'value6'
+			key1: 'Super Gear',
+			key2: 'Nylon PA',
+			key3: '...',
+			key4: '$86.32',
+			key5: '-86.32'
 		}
 	];
 </script>
@@ -177,38 +157,35 @@
 		</tbody>
 	</table> -->
 	<div class="flex flex-wrap">
-		<div class="w-full p-4 ">
+		<div class="w-full">
 			<div class="">
-				<Table.Root class="p-1 ">
-					<Table.Header class="border-b-2 border-slate-400 bg-zinc-800 text-white	">
+				<Table.Root class="">
+					<Table.Header class="border-b-2 border-slate-400 bg-gray-200	">
 						<Table.Row>
-							<Table.Head>Sr No.</Table.Head>
-							<Table.Head>Column</Table.Head>
-							<Table.Head>Column</Table.Head>  
-							<Table.Head>Column</Table.Head>
-							<Table.Head>Column</Table.Head>
-							<Table.Head>Column</Table.Head>
-							<Table.Head>Column</Table.Head>
-							<Table.Head>Column</Table.Head>
+							<Table.Head>Name</Table.Head>
+							<Table.Head>AM Material</Table.Head>
+							<Table.Head>Model</Table.Head>
+							<Table.Head>Average Price</Table.Head>
+							<Table.Head>Savings</Table.Head>
+							<Table.Head></Table.Head>
 						</Table.Row>
 					</Table.Header>
 					<Table.Body>
 						{#each arrayOfObjects as a, index}
 							<Table.Row class=" border-b border-slate-400">
-								<Table.Cell class="font-medium">{index + 1}</Table.Cell>
+								<!-- <Table.Cell class="font-medium">{index + 1}</Table.Cell> -->
 								<Table.Cell>{a.key1}</Table.Cell>
 								<Table.Cell>{a.key2}</Table.Cell>
-								<Table.Cell class="text-left">{a.key3}</Table.Cell>
+								<Table.Cell class="">{a.key3}</Table.Cell>
 								<Table.Cell>{a.key4}</Table.Cell>
 								<Table.Cell>{a.key5}</Table.Cell>
-								<Table.Cell>{a.key6}</Table.Cell>
-								<Table.Cell class="text-right">
-									<Button variant="destructive">Button</Button>
+								<Table.Cell class="text-center">
+									<Button >Button</Button>
 								</Table.Cell>
 							</Table.Row>
 						{/each}
 					</Table.Body>
-					<Table.Caption class="p-2">List of rows and columns.</Table.Caption>
+					<Table.Caption class="p-2">List of Material and prices.</Table.Caption>
 				</Table.Root>
 			</div>
 		</div>

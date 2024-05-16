@@ -78,7 +78,7 @@
 		<div class="w-full p-2">
 			<Button
 				type="submit"
-				class="mx-auto flex  rounded  px-20 py-2 text-lg font-semibold text-white hover:bg-black"
+				class="mx-auto flex w-full rounded   py-2 text-lg font-semibold text-white hover:bg-black"
 				>Submit</Button
 			>
 		</div>

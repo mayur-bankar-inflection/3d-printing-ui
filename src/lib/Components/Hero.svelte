@@ -30,13 +30,13 @@
 		</div>
 
 		<!-- Sign-up form for large screen and above -->
-	<div class="lg:absolute inset-0 z-50 lg:px-10 my-5 lg:my-0 flex items-center justify-center lg:justify-end">
-		<form class="rounded-xl lg:w-1/3 bg-white  bg-opacity-60 px-10 py-5 shadow-md ">
+	<div class="lg:absolute inset-0 z-50 lg:px-10 my-5 lg:my-0 flex items-center justify-center lg:justify-end ">
+		<form class="rounded-xl lg:w-1/4 bg-white  bg-opacity-60 px-10 py-5 shadow-md ">
 			<h2 class="mb-4 text-4xl text-center font-semibold text-zinc-800">Sign in</h2>
 			<div class="mb-4">
-				<label class="mb-2 block text-lg text-base font-semibold text-zinc-800" for="email"> Email </label>
-				<input
-					class=" w-full appearance-none rounded border px-5 py-4 leading-tight text-gray-700 focus:outline-none"
+				<Label class="mb-1 block text-lg  font-semibold text-zinc-800" for="email"> Email </Label>
+				<Input
+					class=" w-full appearance-none rounded border  leading-tight text-gray-700 focus:outline-none"
 					id="email"
 					type="email"
 					placeholder="abc@gmail.com"
@@ -44,10 +44,10 @@
 				/>
 			</div>
 			<div class="mb-4">
-				<label class="mb-2 block text-lg text-base font-semibold text-zinc-800" for="password">
+				<Label class="mb-1 block text-lg font-semibold text-zinc-800" for="password">
 					Password
-				</label>
-				<input
+				</Label>
+				<Input
 					class="focus:shadow-outline w-full appearance-none rounded border px-5 py-4 leading-tight text-gray-700 focus:outline-none"
 					id="password"
 					type="password"
@@ -56,17 +56,18 @@
 			</div>
 			<!-- Add more form fields as needed -->
 			<div class="flex w-full items-center justify-center">
-				<button
+				<Button
 					class=" w-full max-w-xs rounded bg-zinc-800 px-4 py-2 font-bold text-white hover:bg-black"
 				>
 					login
-				</button>
+				</Button>
 			</div>
+			<!-- <p>OR</p> -->
             <div class="flex items-center justify-center mt-4">
-                <button class="px-8 py-2 max-w-xs bg-white hover:bg-slate-300 border flex gap-2 rounded-lg text-zinc-800  ">
+                <Button class="w-full px-8 py-2 max-w-xs bg-white hover:bg-slate-300 border flex gap-2 rounded-lg text-zinc-800  ">
                     <img class="w-6 h-6" src="https://www.svgrepo.com/show/475656/google-color.svg" loading="lazy" alt="google logo">
                     <span class=" font-semibold">Login with Google</span>
-                </button>
+                </Button>
             </div>
 			
 		</form>
