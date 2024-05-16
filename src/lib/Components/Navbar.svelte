@@ -1,7 +1,6 @@
 <script lang="ts">
 	import * as Sheet from '$lib/Components/ui/sheet';
 	import Button from './ui/button/button.svelte';
-
 </script>
 
 <nav class=" h-fit w-full bg-zinc-800 py-4">
@@ -9,7 +8,7 @@
 		<div class="relative flex h-16 w-full items-center justify-between px-2">
 			<!-- Drawer & logo for mobile view -->
 			<div class=" sm:hidden flex items-center w-full">
-				<div>
+				<div class="w-1/2">
 					<Sheet.Root>
 						<Sheet.Trigger asChild let:builder>
 							<Button builders={[builder]} variant="outline"
@@ -49,7 +48,6 @@
 								>
 							</Sheet.Close>
 	
-					
 							<Sheet.Close asChild let:builder>
 								<Button
 									builders={[builder]}
@@ -58,7 +56,6 @@
 									>Estimation</Button
 								>
 							</Sheet.Close>
-	
 	
 							<Sheet.Close asChild let:builder>
 								<Button
@@ -73,14 +70,14 @@
 				</div>
 				
 
-				<div class=" flex justify-center w-full -mx-10">
+				<div class=" -mx-5 flex justify-center">
 					<img src="Navbar/logos.png" alt="" class="h-14 w-14" />
 				</div>
 			</div>
+			
 			<!-- end of drawer -->
 			
-			
-			
+
 			<div
 				class="flex flex-1 items-center justify-center p-1 py-2 sm:items-stretch sm:justify-start"
 			>
@@ -126,7 +123,7 @@
 
 						<a href="/dashboard">Dashboard</a>
 					</button>
-					
+
 					<button
 						class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 					>
@@ -152,7 +149,6 @@
 			</div>
 
 			<div class=" hidden flex-shrink-0 flex-row items-center sm:flex md:flex lg:flex">
-				
 				<button
 					class="rounded-md px-3 py-3 text-sm font-medium text-white hover:bg-orange-500 hover:text-white"
 				>
@@ -174,7 +170,7 @@
 					<a href="/help">Help</a>
 				</button>
 			</div>
-			<div class="ml-6 sm:flex hidden">
+			<div class="ml-6 hidden sm:flex">
 				<div>
 					<button
 						type="button"
