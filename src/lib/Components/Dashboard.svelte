@@ -1,6 +1,6 @@
 <script type="ts">
 	import * as Card from '$lib/components/ui/card';
-	import Button from './ui/button/button.svelte';
+	import { Skeleton } from '$lib/components/ui/skeleton/index.ts';
 </script>
 
 <div class="mt-8 text-center text-2xl font-bold text-zinc-800 lg:mt-16 lg:text-3xl">
@@ -14,6 +14,111 @@
 	complex geometries that were previously impossible or impractical. By embracing AM, businesses can
 	streamline prototyping, shorten lead times, and customize products to meet specific needs.
 </p>
+
+<!-- svelte-ignore a11y-distracting-elements -->
+<div class="my-20 h-80 w-full bg-zinc-200 px-5 sm:h-fit">
+	<p class="mx-auto mt-10 flex justify-center text-2xl font-bold text-zinc-800">COLLABORATIONS</p>
+	<div class="hidden sm:flex">
+		<marquee behavior="alternate" direction="left" scrollamount="10" scrolldelay="200" loop="3">
+			<div class="m-4 flex flex-row p-4">
+				<div class="m-4 bg-zinc-500 p-4">
+					<div class="flex items-center space-x-4">
+						<Skeleton class="h-12 w-12 rounded-full" />
+						<div class="space-y-2">
+							<Skeleton class="h-4 w-[250px]" />
+							<Skeleton class="h-4 w-[250px]" />
+						</div>
+					</div>
+				</div>
+				<div class="m-4 bg-zinc-500 p-4">
+					<div class="flex items-center space-x-4">
+						<Skeleton class="h-12 w-12 rounded-full" />
+						<div class="space-y-2">
+							<Skeleton class="h-4 w-[250px]" />
+							<Skeleton class="h-4 w-[200px]" />
+						</div>
+					</div>
+				</div>
+				<div class="m-4 bg-zinc-500 p-4">
+					<div class="flex items-center space-x-4">
+						<Skeleton class="h-12 w-12 rounded-full" />
+						<div class="space-y-2">
+							<Skeleton class="h-4 w-[250px]" />
+							<Skeleton class="h-4 w-[250px]" />
+						</div>
+					</div>
+				</div>
+				<div class="m-4 bg-zinc-500 p-4">
+					<div class="flex items-center space-x-4">
+						<Skeleton class="h-12 w-12 rounded-full" />
+						<div class="space-y-2">
+							<Skeleton class="h-4 w-[250px]" />
+							<Skeleton class="h-4 w-[200px]" />
+						</div>
+					</div>
+				</div>
+				<div class="m-4 bg-zinc-500 p-4">
+					<div class="flex items-center space-x-4">
+						<Skeleton class="h-12 w-12 rounded-full" />
+						<div class="space-y-2">
+							<Skeleton class="h-4 w-[250px]" />
+							<Skeleton class="h-4 w-[250px]" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</marquee>
+	</div>
+	<div class="h-full p-2 sm:hidden">
+		<marquee
+			behavior="scroll"
+			direction="up"
+			scrollamount="10"
+			scrolldelay="200"
+			loop="3"
+			height="250"
+		>
+			<div class="flex flex-col space-y-4">
+				<div class=" bg-zinc-500 p-2">
+					<div class="flex items-center space-x-4">
+						<Skeleton class="h-12 w-12 rounded-full" />
+						<div class="space-y-2">
+							<Skeleton class="h-4 w-[200px]" />
+							<Skeleton class="h-4 w-[150px]" />
+						</div>
+					</div>
+				</div>
+				<div class=" bg-zinc-500 p-2">
+					<div class="flex items-center space-x-4">
+						<Skeleton class="h-12 w-12 rounded-full" />
+						<div class="space-y-2">
+							<Skeleton class="h-4 w-[200px]" />
+							<Skeleton class="h-4 w-[150px]" />
+						</div>
+					</div>
+				</div>
+				<div class=" bg-zinc-500 p-2">
+					<div class="flex items-center space-x-4">
+						<Skeleton class="h-12 w-12 rounded-full" />
+						<div class="space-y-2">
+							<Skeleton class="h-4 w-[200px]" />
+							<Skeleton class="h-4 w-[150px]" />
+						</div>
+					</div>
+				</div>
+				<div class=" bg-zinc-500 p-2">
+					<div class="flex items-center space-x-4">
+						<Skeleton class="h-12 w-12 rounded-full" />
+						<div class="space-y-2">
+							<Skeleton class="h-4 w-[200px]" />
+							<Skeleton class="h-4 w-[150px]" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</marquee>
+	</div>
+</div>
 
 <div class="mx-auto mt-6 flex w-4/5 flex-col py-4 lg:flex-row lg:items-center">
 	<div class="flex items-center">
@@ -84,12 +189,14 @@
 			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
-				<figure class="  bg-zinc-800 p-10 rounded-xl">
-					<img src="/Dashboard/page.png" alt="page" class="w-36 mx-auto" />
+				<figure class="  rounded-xl bg-zinc-800 p-10">
+					<img src="/Dashboard/page.png" alt="page" class="mx-auto w-36" />
 				</figure>
 			</Card.Header>
 			<Card.Content>
-				<h2 class="card-title font-semibold text-xl text-orange-500">Single parts or bulk import</h2>
+				<h2 class="card-title text-xl font-semibold text-orange-500">
+					Single parts or bulk import
+				</h2>
 				<p class=" text-base">
 					Upload CAD models of single parts and assemblies or import bulk data from your ERP system.
 				</p>
@@ -100,12 +207,12 @@
 			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
-				<figure class=" bg-zinc-800 p-10 rounded-xl">
-					<img src="/Dashboard/refine1.png" alt="refine" class="w-36 mx-auto" />
+				<figure class=" rounded-xl bg-zinc-800 p-10">
+					<img src="/Dashboard/refine1.png" alt="refine" class="mx-auto w-36" />
 				</figure>
 			</Card.Header>
 			<Card.Content>
-				<h2 class="card-title font-semibold text-xl  text-orange-500">Comprehensive analysis</h2>
+				<h2 class="card-title text-xl font-semibold text-orange-500">Comprehensive analysis</h2>
 				<p class=" text-base">
 					Quickly assess the suitability of your parts for AM. Identify the best AM process and
 					material for your application and compare results to total cost of ownership calculations.
@@ -117,12 +224,12 @@
 			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
-				<figure class=" bg-zinc-800 p-10 rounded-xl">
-					<img src="/Dashboard/lock.png" alt="lock" class="w-36 mx-auto" />
+				<figure class=" rounded-xl bg-zinc-800 p-10">
+					<img src="/Dashboard/lock.png" alt="lock" class="mx-auto w-36" />
 				</figure>
 			</Card.Header>
 			<Card.Content>
-				<h2 class="card-title font-semibold  text-xl text-orange-500">Privacy by design</h2>
+				<h2 class="card-title text-xl font-semibold text-orange-500">Privacy by design</h2>
 				<p class=" text-base">
 					SelectAM is built as a hybrid web application. Your sensititve data is processed locally
 					on your device and never leaves your network.
