@@ -31,7 +31,7 @@
 
 		<!-- Sign-up form for large screen and above -->
 	<div class="lg:absolute inset-0 z-50 lg:px-10 my-5 lg:my-0 flex items-center justify-center lg:justify-end ">
-		<form class="rounded-xl lg:w-1/4 bg-white  bg-opacity-60 px-10 py-5 shadow-md ">
+		<form class="rounded-xl w-3/4 lg:w-1/4 bg-white  bg-opacity-60 px-5 lg:px-10 py-5 shadow-md ">
 			<h2 class="mb-4 text-4xl text-center font-semibold text-zinc-800">Sign in</h2>
 			<div class="mb-4">
 				<Label class="mb-1 block text-lg  font-semibold text-zinc-800" for="email"> Email </Label>
