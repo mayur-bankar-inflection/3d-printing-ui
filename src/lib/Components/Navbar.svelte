@@ -170,7 +170,7 @@
 					</button>
 				</a>
 			</div>
-			<div class="ml-6  sm:flex">
+			<div class="ml-6 sm:flex">
 				<div>
 					<button
 						type="button"
