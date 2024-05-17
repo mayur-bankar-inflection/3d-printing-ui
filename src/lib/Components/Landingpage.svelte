@@ -1,12 +1,12 @@
 <script type="ts">
-	import * as Card from '$lib/components/ui/card';
+	import * as Card from './ui/card';
 	import Button from './ui/button/button.svelte';
 </script>
 
-<div class="mt-8 text-center text-xl font-bold text-zinc-800 md:text-2xl lg:mt-16 lg:text-3xl">
+<div class="mt-8 text-center animate_animated animate_fadeInUp text-xl font-bold text-zinc-800 md:text-3xl lg:mt-16 lg:text-4xl">
 	ADDITIVE MANUFACTURING
 </div>
-<p class=" mx-auto mt-4 w-4/5 text-justify text-lg leading-tight text-gray-700 lg:mt-8 lg:text-xl">
+<p class=" mx-auto mt-4 w-4/5 text-justify text-lg md:text-xl leading-tight text-gray-700 lg:mt-8 lg:text-2xl">
 	Incorporating additive manufacturing (AM) into your production process offers a transformative
 	approach to manufacturing. Unlike traditional subtractive methods, which involve cutting away
 	material to create a final product, AM builds objects layer by layer from digital designs. This
@@ -21,7 +21,7 @@
 			<img src="/Dashboard/import.png" alt="" class="h-20 w-20 p-4" />
 		</p>
 
-		<div class="ml-3 w-2/3">
+		<div class="ml-3 w-2/3 lg:w-1/2 xl:w-2/3">
 			<h1 class=" text-xl font-semibold text-yellow-500">Import</h1>
 			<p class=" text-gray-600">Start with CAD models or whole part inventories</p>
 		</div>
@@ -36,7 +36,7 @@
 			<img src="/Dashboard/evaluate.png" alt="" class="w-20 p-3" />
 		</p>
 
-		<div class="ml-3 w-2/3">
+		<div class="ml-3 w-2/3 lg:w-1/2 xl:w-2/3">
 			<h1 class=" text-xl font-semibold text-yellow-500">Evaluate</h1>
 			<p class=" text-gray-600">Get AM estimates and manufacturability reports</p>
 		</div>
@@ -51,7 +51,7 @@
 			<img src="/Dashboard/refine.png" alt="" class="w-20 p-3" />
 		</div>
 
-		<div class="ml-3 w-3/4">
+		<div class="ml-3 w-3/4 lg:w-1/2 xl:w-2/3">
 			<h1 class=" text-xl font-semibold text-yellow-500">Refine</h1>
 			<p class=" text-gray-600">Find the best candidates and complete missing data</p>
 		</div>
@@ -66,7 +66,7 @@
 			<img src="/Dashboard/order.png" alt="" class="w-20 p-4" />
 		</p>
 
-		<div class="ml-3 w-2/3">
+		<div class="ml-3 w-2/3 lg:w-1/2 xl:w-2/3">
 			<h1 class=" text-xl font-semibold text-yellow-500">Order</h1>
 			<p class=" text-gray-600">Order the parts from our service partners</p>
 		</div>
@@ -79,7 +79,7 @@
 
 	<div class="mx-6 my-3 flex flex-wrap md:justify-center">
 		<Card.Root
-			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
+			class="bg-base-100 mb-3 mx-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
 				<figure class="  rounded-xl bg-zinc-800 p-10">
@@ -97,7 +97,7 @@
 		</Card.Root>
 
 		<Card.Root
-			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
+			class="bg-base-100 mb-3 mx-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
 				<figure class=" rounded-xl bg-zinc-800 p-10">
@@ -114,7 +114,7 @@
 		</Card.Root>
 
 		<Card.Root
-			class="bg-base-100 mb-3 mr-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
+			class="bg-base-100 mb-3 mx-3 w-[390px] cursor-pointer rounded-xl  shadow-xl duration-300 hover:scale-95 "
 		>
 			<Card.Header>
 				<figure class=" rounded-xl bg-zinc-800 p-10">

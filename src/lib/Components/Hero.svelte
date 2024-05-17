@@ -19,7 +19,7 @@
 	<div
 		class="video-content font-Onest z-10 flex flex-col justify-center space-y-2 px-12 md:text-center lg:items-start lg:px-8 xl:mx-8"
 	>
-		<h1 class="animate__animated animate__fadeInUp text-3xl md:text-4xl lg:text-6xl lg:w-[500px] xl:w-full lg:text-start font-semibold lg:px-0">
+		<h1 class="animate__animated animate__fadeInUp text-4xl font-semibold lg:px-0 lg:text-6xl lg:w-1/2 lg:text-start xl:w-full">
 			Enhance Manufacturing
 		</h1>
 		<h1 class="animate__animated animate__fadeInUp text-3xl md:text-4xl font-semibold lg:text-6xl">
