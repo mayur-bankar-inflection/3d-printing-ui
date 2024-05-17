@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Button from './ui/button/button.svelte';
-	import { Input } from '$lib/components/ui/input/index.js';
-	import { Label } from '$lib/components/ui/label/index.js';
+	import { Input } from './ui/input/index';
+	import { Label } from './ui/label/index';
 </script>
 
 <section class="relative flex h-[645px] flex-col justify-center text-left text-white">
@@ -19,10 +19,10 @@
 	<div
 		class="video-content font-Onest z-10 flex flex-col justify-center space-y-2 px-12 md:text-center lg:items-start lg:px-8 xl:mx-8"
 	>
-		<h1 class="animate__animated animate__fadeInUp text-4xl font-semibold lg:px-0 lg:text-6xl">
+		<h1 class="animate__animated animate__fadeInUp text-3xl md:text-4xl font-semibold lg:px-0 lg:text-6xl">
 			Enhance Manufacturing
 		</h1>
-		<h1 class="animate__animated animate__fadeInUp text-4xl font-semibold lg:text-6xl">
+		<h1 class="animate__animated animate__fadeInUp text-3xl md:text-4xl font-semibold lg:text-6xl">
 			With <span class=" font-bold text-yellow-500">3D PRINTING</span>
 		</h1>
 		<h3 class="animate__animated animate__fadeInUp px-2 text-lg font-light lg:text-2xl">
@@ -37,8 +37,8 @@
 		<form
 			class="d w-3/4 rounded-xl bg-white bg-opacity-60 px-5 py-5 shadow-md md:w-1/3 lg:w-1/4 lg:px-10 xl:mx-8 xl:py-8"
 		>
-			<h2 class="mb-4 text-center text-3xl font-semibold text-zinc-800 md:text-4xl">Sign in</h2>
-			<div class="mb-4">
+			<h2 class="mb-2 sm:mb-4 text-center text-3xl font-semibold text-zinc-800 md:text-4xl">Sign in</h2>
+			<div class="mb-2 sm:mb-4">
 				<Label class="mb-1 block text-lg  font-semibold text-zinc-800" for="email">Email</Label>
 				<Input
 					class=" w-full appearance-none rounded border  leading-tight text-gray-700 focus:outline-none"
