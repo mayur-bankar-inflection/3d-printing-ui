@@ -1,6 +1,7 @@
 <script type="ts">
 	import * as Card from '$lib/components/ui/card';
 	import { Skeleton } from '$lib/components/ui/skeleton/index.ts';
+	import Collaborations from './Collaborations.svelte';
 </script>
 
 <div class="mt-8 text-center text-2xl font-bold text-zinc-800 lg:mt-16 lg:text-3xl">
@@ -15,110 +16,7 @@
 	streamline prototyping, shorten lead times, and customize products to meet specific needs.
 </p>
 
-<!-- svelte-ignore a11y-distracting-elements -->
-<div class="my-20 h-80 w-fit bg-zinc-200 px-5 sm:h-fit mx-4 ">
-	<p class="mx-auto mt-10 flex justify-center text-2xl font-bold text-zinc-800">COLLABORATIONS</p>
-	<div class="hidden sm:flex">
-		<marquee behavior="alternate" direction="left" scrollamount="10" scrolldelay="200" loop="3">
-			<div class="m-4 flex flex-row p-4">
-				<div class="m-4 bg-zinc-500 p-4">
-					<div class="flex items-center space-x-4">
-						<Skeleton class="h-12 w-12 rounded-full" />
-						<div class="space-y-2">
-							<Skeleton class="h-4 w-[250px]" />
-							<Skeleton class="h-4 w-[250px]" />
-						</div>
-					</div>
-				</div>
-				<div class="m-4 bg-zinc-500 p-4">
-					<div class="flex items-center space-x-4">
-						<Skeleton class="h-12 w-12 rounded-full" />
-						<div class="space-y-2">
-							<Skeleton class="h-4 w-[250px]" />
-							<Skeleton class="h-4 w-[200px]" />
-						</div>
-					</div>
-				</div>
-				<div class="m-4 bg-zinc-500 p-4">
-					<div class="flex items-center space-x-4">
-						<Skeleton class="h-12 w-12 rounded-full" />
-						<div class="space-y-2">
-							<Skeleton class="h-4 w-[250px]" />
-							<Skeleton class="h-4 w-[250px]" />
-						</div>
-					</div>
-				</div>
-				<div class="m-4 bg-zinc-500 p-4">
-					<div class="flex items-center space-x-4">
-						<Skeleton class="h-12 w-12 rounded-full" />
-						<div class="space-y-2">
-							<Skeleton class="h-4 w-[250px]" />
-							<Skeleton class="h-4 w-[200px]" />
-						</div>
-					</div>
-				</div>
-				<div class="m-4 bg-zinc-500 p-4">
-					<div class="flex items-center space-x-4">
-						<Skeleton class="h-12 w-12 rounded-full" />
-						<div class="space-y-2">
-							<Skeleton class="h-4 w-[250px]" />
-							<Skeleton class="h-4 w-[250px]" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</marquee>
-	</div>
-	<div class="h-full p-2 sm:hidden">
-		<marquee
-			behavior="scroll"
-			direction="up"
-			scrollamount="10"
-			scrolldelay="200"
-			loop="3"
-			height="250"
-		>
-			<div class="flex flex-col space-y-4">
-				<div class=" bg-zinc-500 p-2">
-					<div class="flex items-center space-x-4">
-						<Skeleton class="h-12 w-12 rounded-full" />
-						<div class="space-y-2">
-							<Skeleton class="h-4 w-[200px]" />
-							<Skeleton class="h-4 w-[150px]" />
-						</div>
-					</div>
-				</div>
-				<div class=" bg-zinc-500 p-2">
-					<div class="flex items-center space-x-4">
-						<Skeleton class="h-12 w-12 rounded-full" />
-						<div class="space-y-2">
-							<Skeleton class="h-4 w-[200px]" />
-							<Skeleton class="h-4 w-[150px]" />
-						</div>
-					</div>
-				</div>
-				<div class=" bg-zinc-500 p-2">
-					<div class="flex items-center space-x-4">
-						<Skeleton class="h-12 w-12 rounded-full" />
-						<div class="space-y-2">
-							<Skeleton class="h-4 w-[200px]" />
-							<Skeleton class="h-4 w-[150px]" />
-						</div>
-					</div>
-				</div>
-				<div class=" bg-zinc-500 p-2">
-					<div class="flex items-center space-x-4">
-						<Skeleton class="h-12 w-12 rounded-full" />
-						<div class="space-y-2">
-							<Skeleton class="h-4 w-[200px]" />
-							<Skeleton class="h-4 w-[150px]" />
-						</div>
-					</div>
-				</div>
-			</div>
-		</marquee>
-	</div>
-</div>
+<Collaborations/>
 
 <div class="mx-auto mt-6 flex w-4/5 flex-col py-4 lg:flex-row lg:items-center">
 	<div class="flex items-center">
