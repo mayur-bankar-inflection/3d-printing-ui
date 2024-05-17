@@ -16,7 +16,7 @@
 </p>
 
 <!-- svelte-ignore a11y-distracting-elements -->
-<div class="my-20 h-80 w-full bg-zinc-200 px-5 sm:h-fit">
+<div class="my-20 h-80 w-fit bg-zinc-200 px-5 sm:h-fit mx-4 ">
 	<p class="mx-auto mt-10 flex justify-center text-2xl font-bold text-zinc-800">COLLABORATIONS</p>
 	<div class="hidden sm:flex">
 		<marquee behavior="alternate" direction="left" scrollamount="10" scrolldelay="200" loop="3">
