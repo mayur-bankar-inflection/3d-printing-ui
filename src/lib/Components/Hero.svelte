@@ -19,23 +19,23 @@
 	<div
 		class="video-content font-Onest z-10 flex flex-col justify-center space-y-2 px-12 md:text-center lg:items-start lg:px-8 xl:mx-8"
 	>
-		<h1 class="animate__animated animate__fadeInUp text-3xl md:text-4xl font-semibold lg:px-0 lg:text-6xl">
+		<h1 class="animate__animated animate__fadeInUp text-3xl md:text-4xl lg:text-6xl lg:w-[500px] xl:w-full lg:text-start font-semibold lg:px-0">
 			Enhance Manufacturing
 		</h1>
 		<h1 class="animate__animated animate__fadeInUp text-3xl md:text-4xl font-semibold lg:text-6xl">
 			With <span class=" font-bold text-yellow-500">3D PRINTING</span>
 		</h1>
-		<h3 class="animate__animated animate__fadeInUp px-2 text-lg font-light lg:text-2xl">
+		<h3 class="animate__animated animate__fadeInUp px-2 text-lg font-light lg:text-2xl lg:w-2/3 lg:text-start xl:w-full">
 			Unlock the full potential of additive manufacturing for your business
 		</h3>
 	</div>
 
 	<!-- Sign-up form for large screen and above -->
 	<div
-		class="inset-0 z-50 my-5 flex items-center justify-center lg:absolute lg:my-0 lg:justify-end lg:px-10"
+		class=" inset-0 z-50 my-5 flex items-center justify-center lg:absolute lg:my-0 lg:justify-end lg:px-10"
 	>
 		<form
-			class="d w-3/4 rounded-xl bg-white bg-opacity-60 px-5 py-5 shadow-md md:w-1/3 lg:w-1/4 lg:px-10 xl:mx-8 xl:py-8"
+			class="d w-3/4 md:w-[320px] xl:w-1/4 rounded-xl bg-white bg-opacity-60 px-5 py-5 shadow-md  lg:px-10 xl:mx-8 xl:py-8"
 		>
 			<h2 class="mb-2 sm:mb-4 text-center text-3xl font-semibold text-zinc-800 md:text-4xl">Sign in</h2>
 			<div class="mb-2 sm:mb-4">
